@@ -4,6 +4,36 @@ html {
     line-height: 1.5;
 }
 
+img {
+    display: inline-block;
+}
+
+/* GRID */
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.col4 {
+    width: 360px;
+    margin-right: 30px;
+    float: left;
+}
+
+.col4:last-child {
+    margin-right: 0px;
+}
+
+/* HEADER */
+
 .header {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
@@ -27,7 +57,7 @@ html {
     font-size: 56px;
     line-height: 62px;
     margin-bottom: 30px;
-    font-family: font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', serif;
     margin-top: -50px;
 }
 
@@ -44,4 +74,53 @@ html {
     position: absolute;
     bottom: 50px;
     left: 50%;
+}
+
+/* POTRFOLIO */
+
+.portfolio {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.portfolio-iten {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 46px;
+    margin-bottom: 60px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.portfolio-iten-img {
+    margin-bottom: 17px;
+}
+
+.portfolio-iten-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    line-height: normal;
+}
+
+.portfolio-iten-title a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #FFF;
+}
+
+.portfolio-iten-title a:hover {
+    color: #0052C2;
+    border-color: rgba(0, 82, 194, 0.3)
+}
+
+.portfolio-iten-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.portfolio-iten-text p {
+    margin-top: 0px;
+    margin-bottom: 15px;
 }

@@ -124,3 +124,38 @@ img {
     margin-top: 0px;
     margin-bottom: 15px;
 }
+
+/* FOOTER */
+
+.footer {
+    background-color: #061634;
+    color: #6479a2;
+    padding-top: 90px;
+    padding-bottom: 190px;
+}
+
+.footer p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+p.footer-name {
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: normal;
+    font-family: 'Merriweather', serif;
+}
+
+p.footer-social {
+    color: #FFF;
+}
+
+p.footer-social-icons {
+    color: #FFF;
+    font-size: 32px;
+}
+
+p.footer-social-icons a {
+    color: #FFF;
+    text-decoration: none;
+}

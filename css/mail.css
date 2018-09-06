@@ -1,11 +1,16 @@
-html {
+html, body {
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    min-width: 280px;
 }
 
 img {
     display: inline-block;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /* GRID */
@@ -40,6 +45,7 @@ img {
     background-position: center;
     background-size: cover;
     height: 100vh;
+    min-height: 400px;
 
     color: #FF5D45;
     text-align: center;
@@ -96,6 +102,11 @@ img {
 
 .portfolio-iten-img {
     margin-bottom: 17px;
+}
+
+.portfolio-iten-img img {
+    max-width: 100%;
+    height: auto;
 }
 
 .portfolio-iten-title {
@@ -236,4 +247,55 @@ p.footer-social-icons a:hover {
 .button:hover {
     color: #061634;
     background-color: #FFF;
+}
+
+/* MEDIA */
+
+@media (max-width 1160px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .col4 {
+        box-sizing: border-box;
+
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header_title {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 15px;
+    }
+
+    .header_slogan {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .portfolio {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .footer {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
 }

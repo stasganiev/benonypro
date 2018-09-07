@@ -21,7 +21,7 @@ img {
     margin-right: auto;
 }
 
-.row::after {
+.row:after {
     clear: both;
     content: "";
     display: table;
@@ -251,15 +251,13 @@ p.footer-social-icons a:hover {
 
 /* MEDIA */
 
-@media (max-width 1160px) {
+@media (max-width: 1160px) {
 
     .container {
         width: 100%;
     }
 
     .col4 {
-        box-sizing: border-box;
-
         width: 100%;
         margin: 0;
         margin-bottom: 30px;

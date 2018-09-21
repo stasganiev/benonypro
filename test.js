@@ -1,7 +1,10 @@
 "use strict";
 
-var message;
+//var message;
+var admin, name;
 
-message = "Я - JavaScript";
+name = "Василий";
+admin = name;
+//message = "Я - JavaScript";
 
-alert(message);
+alert(admin);

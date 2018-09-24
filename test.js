@@ -7,4 +7,8 @@ name = "Василий";
 admin = name;
 //message = "Я - JavaScript";
 
-alert(admin);
+//alert(admin);
+
+var usrname = prompt("Ваше имя?", "Иван");
+
+alert(usrname)

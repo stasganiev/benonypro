@@ -1,14 +1,26 @@
 "use strict";
 
-//var message;
-var admin, name;
+var ansver, pass;
 
-name = "Василий";
-admin = name;
-//message = "Я - JavaScript";
+ansver = prompt("Кто пришёл?", "");
 
-//alert(admin);
+if (ansver == null) {
+    alert("Вход отменён");
+} else if (ansver == "Админ") {
 
-var usrname = prompt("Ваше имя?", "Иван");
+    pass = prompt("Пароль?", "");
+    if (pass == null) {
+        alert("Вход отменён");
+    } else if (pass == "ЧВ") {
+        alert("Добро пожаловать!");
+    } else {
+        alert("Пароль неверен");
+    }
+    
+} else {
+    alert("Я вас не знаю");
+}
 
-alert(usrname)
+message = (login == "Вася") ? "Привет" : 
+    (login == "Директор") ? "Здравствуйте" :
+    (login == "") ? "Нет логина" : "";

@@ -1,26 +1,16 @@
 "use strict";
 
-var ansver, pass;
+var a = +prompt("a?", "");
 
-ansver = prompt("Кто пришёл?", "");
-
-if (ansver == null) {
-    alert("Вход отменён");
-} else if (ansver == "Админ") {
-
-    pass = prompt("Пароль?", "");
-    if (pass == null) {
-        alert("Вход отменён");
-    } else if (pass == "ЧВ") {
-        alert("Добро пожаловать!");
-    } else {
-        alert("Пароль неверен");
-    }
-    
-} else {
-    alert("Я вас не знаю");
+switch (a) {
+    case 0:
+        alert("0");
+        break;
+    case 1:
+        alert("1");
+        break;
+    case 2:
+    case 3:
+        alert("2,3");
+        break;
 }
-
-message = (login == "Вася") ? "Привет" : 
-    (login == "Директор") ? "Здравствуйте" :
-    (login == "") ? "Нет логина" : "";

@@ -24,10 +24,45 @@ function pow (x, n) {
 
 }
 
-var px, pn, pres;
+function sumto(n) {
 
-px = prompt('Основание:', 0);
-pn = prompt('Степень:', pn);
-pres = pow(px, pn);
+    /*var res = 0;
 
-alert('Результат: ' + pres);
+    for(var i = 1; i <= n; i++) {
+        res += i;
+    }
+
+    return res;*/
+
+    if(n <= 1) {
+        return n;
+    }
+
+    return n + sumto(n-1);
+    
+}
+
+function factorial(n) {
+
+    if(n <= 1) {
+        return n;
+    }
+
+    return n * factorial(n-1);
+    
+}
+
+function fib(n) {
+
+    if(n <= 2) {
+        return 1;
+    } else if(n === 3) {
+        return 2;
+    }
+
+    return fib(n - 1) + fib(n - 2);
+
+}
+
+var pn = +prompt('Число:', 0);
+alert('Результат: ' + fib(pn));

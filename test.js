@@ -107,7 +107,20 @@ function randomInt(n1, n2) {
 
 }
 
-var n1 = prompt('Число 1:', 0);
-var n2 = prompt('Число 2:', 0);
+/*
+    функции работы со строками
+*/
 
-alert(sum(n1, n2));
+function ucFirst(str) {
+
+    if(!str) {
+        return str;
+    }
+
+    return str.charAt(0).toUpperCase() + str.slice(1);
+
+}
+
+var str = prompt('Строка', 0);
+
+alert(ucFirst(str));

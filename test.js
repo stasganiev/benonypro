@@ -121,6 +121,44 @@ function ucFirst(str) {
 
 }
 
-var str = prompt('Строка', 0);
+function checkSpam(str) {
 
-alert(ucFirst(str));
+    var checkStr = str.toLowerCase();
+
+    if (~checkStr.indexOf('viagra') || ~checkStr.indexOf('xxx')) {
+        return true;
+    }
+
+    return false;
+
+}
+
+function truncate(str, length) {
+    
+    return (str.length > length) ? str.slice(0, str.length - 3) + '...' : str;
+
+}
+
+function extractCurrencyVavue(str) {
+
+    var length, char;
+    var res = 0;
+
+    length = str.length;
+
+    for(var i = 0; i < length; i++) {
+
+        char = str.substr(i, 1);
+        if(~'0123456789'.indexOf(char)) {
+            res += char;
+        }
+
+    }
+
+    return +res;
+
+}
+
+var str = prompt('Строка', '');
+
+alert(extractCurrencyVavue(str));

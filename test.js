@@ -159,6 +159,7 @@ function extractCurrencyVavue(str) {
 
 }
 
-var str = prompt('Строка', '');
+/*
+    функции работы с массивами
+*/
 
-alert(extractCurrencyVavue(str));

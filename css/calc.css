@@ -1,0 +1,29 @@
+.container {
+    margin: 0 auto;
+    width: 97%
+}
+
+.area {
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+
+.header {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 2px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.leftbar {
+    width: 250px;
+    float: left;
+    height: 550px;
+}
+
+.rightbar {
+    margin-left: 252px;
+    height: 550px;
+}

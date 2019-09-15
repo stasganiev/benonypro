@@ -4,7 +4,11 @@
   "description": "Персональный сайт Стаса Ганиева",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax sass",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp start"
   },
   "repository": {
     "type": "git",

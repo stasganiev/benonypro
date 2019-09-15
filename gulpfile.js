@@ -12,25 +12,50 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 
 gulp.task("css", function () {
-  return gulp.src("src/sass/style.scss")
+  return gulp.src("src/sass/_style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
-    // .pipe(csso())
+    .pipe(csso())
     .pipe(rename("style_min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("public/css"))
+    .pipe(gulp.dest("src/css"))
     .pipe(server.stream());
 });
 
-gulp.task("sass", function () {
-  return gulp.src("src/sass/**/*.scss")
-  .pipe(sass().on("error", sass.logError))
-  .pipe(gulp.dest("public/css"))
-})
+gulp.task("cssnorm", function () {
+  return gulp.src("src/sass/normalize.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(csso())
+    .pipe(rename("normalize_min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("src/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("server", function () {
+  server.init({
+    server: "src/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch("src/sass/**/*.scss", gulp.series("css", "cssnorm"));
+  gulp.watch("src/*.html").on("change", server.reload);
+});
+
+gulp.task("build", gulp.series("css", "cssnorm"));
+gulp.task("start", gulp.series("build", "server"));
 
 // gulp.task("task_name", function () {
 //     return gulp.src("source_files") // путь к файлам-исходникам

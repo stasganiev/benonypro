@@ -12,7 +12,7 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 
 gulp.task("css", function () {
-  return gulp.src("src/sass/_style.scss")
+  return gulp.src("src/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())

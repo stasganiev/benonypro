@@ -15,23 +15,86 @@
     <!-- Собственные стили -->
     <link href="css/style_min.css" rel="stylesheet">
     <!-- Подключение шрифтов -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet">
+    <link rel="preload" href="fonts/NotoSansSC-Regular.otf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/NotoSansSC-Light.otf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/NotoSansSC-Bold.otf" as="font" crossorigin="anonymous">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/logo16.png">
 
 </head>
 <body>
 
-  <nav class="navbar container">
-    <ul class="navbar__group menu list-default">
-      <li class="menu__item"><a href="#"></a>Обо мне</li>
-    </ul>
-    <ul class="navbar__group menu list-default">
-      <li class="menu__item"><a href="#"></a>Портфолио</li>
-      <li class="menu__item"><a href="#"></a>Статьи</li>
-      <li class="menu__item"><a href="#"></a>Заказать услугу</li>
-    </ul>
-  </nav>
+  <main>
+
+    <h1 class="visually-hidden">Стас Ганиев, главная</h1>
+
+    <section class="face">
+      <div class="container">
+
+        <nav class="navbar flex-sp">
+          <ul class="navbar__about menu list-default">
+            <div class="navbar__logo">
+              <a href="#" class="navbar__logo-link">
+                <img class="logo logo_head" src="img/logo-head.png" width="140px" height="50px" alt="Stas Ganiev">
+              </a>
+            </div>
+            <li class="menu__item menu__item_small"><a class="menu__link menu__link_small" href="#">Обо мне</a></li>
+          </ul>
+          <ul class="navbar__main menu list-default">
+            <li class="menu__item menu__item_big"><a class="menu__link menu__link_big" href="#">Портфолио</a></li>
+            <li class="menu__item menu__item_big"><a class="menu__link menu__link_big" href="#">Статьи</a></li>
+            <li class="menu__item menu__item_big"><a class="menu__link menu__link_big" href="#">Услуги</a></li>
+            <!-- <li class="menu__item menu__item_big"><a class="menu__link menu__link_big" href="#">Готовые решения</a></li> -->
+          </ul>
+          <ul class="navbar__user menu list-default">
+            <li class="menu__item menu__item_small"><a class="menu__link menu__link_small" href="#">Войти</a></li>
+          </ul>
+        </nav>
+
+        <div class="face__social hidden_tablet hidden_mobile">
+          <ul class="social list-default flex">
+            <li class="sotial-item">
+              <img class="sotial-img" src="img/icon-github.svg" width="28" height="28" alt="GitHub">
+            </li>
+            <li class="sotial-item">
+              <img class="sotial-img" src="img/icon-instagram.svg" width="28" height="28" alt="Instagram">
+            </li>
+            <li class="sotial-item">
+              <img class="sotial-img" src="img/icon-telegram.svg" width="28" height="28" alt="Telegram">
+            </li>
+            <li class="sotial-item">
+              <img class="sotial-img" src="img/icon-skype.svg" width="28" height="28" alt="Skype">
+            </li>
+            <li class="sotial-item">
+              <img class="sotial-img" src="img/icon-facebook.svg" width="28" height="28" alt="Facebook">
+            </li>
+            <li class="sotial-item">
+              <img class="sotial-img" src="img/icon-youtube.svg" width="28" height="28" alt="You-Tube">
+            </li>
+          </ul>
+        </div>
+
+        <div class="face__cover">
+          <div class="face__portret-box">
+            <img class="face__portret-img" src="img/photo_my_half.png" width="314" height="450" alt="Ганиев Станислав">
+          </div>
+          <div class="face__present">
+            <p class="face__present-name">Стас</p>
+            <p class="face__present-surname">Ганиев</p>
+            <div class="face__present-name">
+              <p class="face__service1">Разработа в 1С</p>
+              <p class="face__service1">Вёрстка сайтов</p>
+            </div>
+          </div>
+          <div class="face__btn">
+            <button class="btn-order btn">Заказать</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
 
   <!-- <img class="" src="" width="" height="" alt=""> -->
   <!-- <picture>

@@ -19,7 +19,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(csso())
+    // .pipe(csso())
     .pipe(rename("style_min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("src/css"))
@@ -50,7 +50,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("src/sass/**/*.scss", gulp.series("css", "cssnorm"));
+  gulp.watch("src/sass/**/*.scss", gulp.series("css"));
   gulp.watch("src/*.html").on("change", server.reload);
 });
 

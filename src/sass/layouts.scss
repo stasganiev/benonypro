@@ -6,20 +6,202 @@
   margin-left: auto;
 }
 
-@media (max-width: $mobile-max) {
+@media (max-width: $s-max) {
   .container {
-    max-width: $mobile-width-content;
+    max-width: $s-content;
   }
 }
 
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+@media (min-width: $m-min) and (max-width: $m-max) {
   .container {
-    max-width: $tablet-width-content;
+    max-width: $m-content;
   }
 }
 
-@media (min-width: $desktop-min) {
+@media (min-width: $l-min) {
   .container {
-    max-width: $desktop-width-content;
+    max-width: $l-content;
+  }
+}
+
+// ////////////////////////////
+// Видимость
+// ////////////////////////////
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+.hidden {
+  display: none;
+}
+
+.display-show {
+  display: inline-block;
+}
+
+@media (max-width: $s-max) {
+  .hidden_mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .hidden_tablet {
+    display: none;
+  }
+}
+
+@media (min-width: $l-min) {
+  .hidden_desktop {
+    display: none;
+  }
+}
+
+// ////////////////////////////
+// Сетки
+// ////////////////////////////
+.ones-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-sp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-sp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: $s-max) {
+  .cmob-to-rtabdesk,
+  .cmobtab-to-rdesk {
+    display: flex;
+    flex-direction: column;
+
+    &_sb {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .rmob-to-ctabdesk {
+    display: flex;
+    flex-direction: row;
+
+    &_sb {
+      justify-content: space-between;
+    }
+
+    &_sa {
+      justify-content: space-around;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .cmob-to-rtabdesk {
+    display: flex;
+    flex-direction: row;
+
+    &_sb {
+      justify-content: space-between;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .cmobtab-to-rdesk {
+    display: flex;
+    flex-direction: column;
+
+    &_sb {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .rmob-to-ctabdesk {
+    display: flex;
+    flex-direction: column;
+
+    &_sb,
+    &_sa {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: $l-min) {
+  .cmob-to-rtabdesk,
+  .cmobtab-to-rdesk {
+    display: flex;
+    flex-direction: row;
+
+    &_sb {
+      justify-content: space-between;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
+  }
+
+  .rmob-to-ctabdesk {
+    display: flex;
+    flex-direction: column;
+
+    &_sb,
+    &_sa {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_wr {
+      flex-wrap: wrap;
+    }
   }
 }

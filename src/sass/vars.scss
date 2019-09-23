@@ -1,6 +1,8 @@
+// ретинизация
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
+// главная сетка
 $xs-min: 320px;
 $xs-max: 599px;
 $s-min: 600px;
@@ -23,10 +25,22 @@ $m-content: 720px;
 $l-content: 1010px;
 $xl-content: 1180px;
 
+// основные цвета
 $bk-color: #ffffff;
 $bk-color-dark: #e5e5e5;
 
 $txt-color: #000000;
 $txt-color-light: #ffffff;
 
-$color-btn-bk-menu: rgba(255, 255, 255, 0.5);
+// меню и навигация
+$color-btn-menu: #dddddd;
+$color-btn-menu-hover: #ffffff;
+$color-btn-menu-active: #ffffff;
+$color-btn-menu-bk: rgba(255, 255, 255, 0.05);
+$color-btn-menu-bk-hover: rgba(255, 255, 255, 0.15);
+$color-btn-menu-bk-active: rgba(255, 255, 255, 0.25);
+$border-radius-btn-menu: 50px;
+
+$color-navbar-bk: rgba(10, 40, 70, 0.85);
+
+// кнопки

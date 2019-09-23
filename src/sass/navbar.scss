@@ -1,5 +1,6 @@
 .navbar {
   width: 100%;
+  background-color: $color-navbar-bk;
 }
 
 .navbar__about {
@@ -15,4 +16,8 @@
 
 .navbar__logo {
   padding: 2px;
+}
+
+.navbar__logo-link {
+
 }

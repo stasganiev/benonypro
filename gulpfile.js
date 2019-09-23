@@ -34,7 +34,7 @@ gulp.task("cssnorm", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(csso())
+    // .pipe(csso())
     .pipe(rename("normalize_min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("src/css"))

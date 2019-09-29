@@ -1,4 +1,5 @@
 // Общие
+@import "basecolors.scss";
 @import "vars.scss";
 @import "mixins.scss";
 @import "base.scss";
@@ -10,4 +11,4 @@
 @import "menu.scss";
 @import "face.scss";
 // Служебные
-// @import "outlines.scss";
+@import "outlines.scss";

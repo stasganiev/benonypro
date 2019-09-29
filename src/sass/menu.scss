@@ -4,16 +4,13 @@
 }
 
 .menu__item {
-  padding: 8px;
+  padding: 0;
 }
 
 .menu__link {
-  padding: 9px 12px;
-  padding-bottom: 11px;
-
   @include colors($color-btn-menu, $color-btn-menu-bk);
   text-align: center;
-  border-radius: $border-radius-btn-menu;
+  vertical-align: middle;
 
   &_small {
     min-width: 72px;
@@ -23,11 +20,30 @@
     min-width: 150px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     @include colors($color-btn-menu-hover, $color-btn-menu-bk-hover);
   }
 
   &:active {
     @include colors($color-btn-menu-active, $color-btn-menu-bk-active);
+  }
+}
+
+@media (max-width: $s-max) {
+  .menu__link {
+    padding: 8px 12px;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .menu__link {
+    padding: 22px 12px;
+  }
+}
+
+@media (min-width: $l-min) {
+  .menu__link {
+    padding: 22px 12px;
   }
 }

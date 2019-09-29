@@ -26,17 +26,26 @@
 
   <main>
 
-    <h1 class="visually-hidden">Стас Ганиев, главная</h1>
+    <nav class="navbar">
+      <div class="container navbar__content navbar__js_opened">
+        <!-- navbar__js_opened navbar__js_closed navbar__js_nojs -->
 
-    <section class="face">
-      <div class="container">
-
-        <nav class="navbar flex-sp">
+        <div class="navbar__header">
           <div class="navbar__logo">
             <a href="index.html" class="navbar__logo-link">
-              <img class="logo logo_head" src="img/logo-head.png" width="140px" height="50px" alt="Stas Ganiev">
+              <picture>
+                <source media="(min-width: 1170px)" srcset="img/logo-head-desktop-x1.png 1x, img/logo-head-desktop-x2.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-head-tablet-x1.png 1x, img/logo-head-desktop-x1.png 2x">
+                <img class="logo logo_head" src="img/logo-head-mobile-x1.png" srcset="img/logo-head-mobile-x2.png 2x" width="140" height="50" alt="Stas Ganiev">
+              </picture>
             </a>
           </div>
+          <div class="navbar__btn-box">
+            <button class="navbar__btn-menu hidden_desktop btn btn__main-menu" type="button"></button>
+          </div>
+        </div>
+
+        <div class="navbar__menu-list">
           <ul class="navbar__about menu list-default">
             <li class="menu__item menu__item_small"><a class="menu__link menu__link_small" href="#">Обо мне</a></li>
           </ul>
@@ -49,7 +58,16 @@
           <ul class="navbar__user menu list-default">
             <li class="menu__item menu__item_small"><a class="menu__link menu__link_small" href="#">Войти</a></li>
           </ul>
-        </nav>
+        </div>
+
+      </div>
+    </nav>
+
+    <h1 class="visually-hidden">Стас Ганиев, главная</h1>
+
+    <section class="face">
+
+      <div class="container">
 
         <div class="face__social hidden_tablet hidden_mobile">
           <ul class="social list-default flex">
@@ -87,7 +105,7 @@
             </div>
           </div>
           <div class="face__btn">
-            <button class="btn-order btn">Заказать</button>
+            <button class="btn-order btn btn-accept">Оставить заявку</button>
           </div>
         </div>
 
@@ -101,6 +119,14 @@
     <source media="(min-width: 960px)" srcset="a.png">
     <source media="(min-width: 600px)" srcset="b.png">
     <img src="c.png">
+  </picture> -->
+  <!-- <picture>
+    <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+    <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x">
+    <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+    <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+    <source media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x">
+    <img class="profits__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="185" height="305" alt="Поднимает настроение">
   </picture> -->
 
   <!-- Формы/попапы  -->

@@ -1,3 +1,20 @@
-.logo {
-  // background-color: $color-btn-bk-menu;
+@media (max-width: $s-max) {
+  .logo {
+    width: 24px;
+    height: 36px;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .logo {
+    width: 100px;
+    height: 36px;
+  }
+}
+
+@media (min-width: $l-min) {
+  .logo {
+    width: 140px;
+    height: 50px;
+  }
 }

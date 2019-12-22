@@ -20,30 +20,9 @@
 // ////////////////////////////
 .btn__main-menu {
   position: absolute;
-  right: 0;
-
-  width: 30px;
-  height: 30px;
+  right: 10px;
 
   cursor: pointer;
-}
-
-@media (max-width: $s-max) {
-  .btn__main-menu {
-    top: 15px;
-  }
-}
-
-@media (min-width: $m-min) and (max-width: $m-max) {
-  .btn__main-menu {
-    top: 30px;
-  }
-}
-
-@media (min-width: $l-min) {
-  .btn__main-menu {
-    top: 30px;
-  }
 }
 
 .navbar__js_closed .btn__main-menu {
@@ -55,21 +34,21 @@
     right: 0;
 
     width: 30px;
-    height: 4px;
+    height: 3px;
 
     background-color: $color-btn-menu;
-    box-shadow: 0 10px 0 0 $color-btn-menu, 0 20px 0 0 $color-btn-menu;
+    box-shadow: 0 8px 0 0 $color-btn-menu, 0 16px 0 0 $color-btn-menu;
   }
 
   &:hover::before,
   &:focus::before {
     background-color: $color-btn-menu-hover;
-    box-shadow: 0 10px 0 0 $color-btn-menu-hover, 0 20px 0 0 $color-btn-menu-hover;
+    box-shadow: 0 8px 0 0 $color-btn-menu-hover, 0 16px 0 0 $color-btn-menu-hover;
   }
 
   &:active::before {
     background-color: $color-btn-menu-active;
-    box-shadow: 0 10px 0 0 $color-btn-menu-active, 0 20px 0 0 $color-btn-menu-active;
+    box-shadow: 0 8px 0 0 $color-btn-menu-active, 0 16px 0 0 $color-btn-menu-active;
   }
 }
 
@@ -79,7 +58,7 @@
     content: "";
 
     position: absolute;
-    top: 0;
+    top: 8px;
     right: 0;
 
     width: 25px;
@@ -112,3 +91,46 @@
 .navbar__js_nojs .btn__main-menu {
   display: none;
 }
+
+@media (max-width: $s-max) {
+  .btn__main-menu {
+    top: 15px;
+  }
+
+  .navbar__js_closed .btn__main-menu {
+    width: 30px;
+    height: 27px;
+    top: 10px;
+  }
+
+  .navbar__js_opened .btn__main-menu {
+    width: 25px;
+    height: 22px;
+    top: 12px;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .btn__main-menu {
+    top: 15px;
+  }
+
+  .navbar__js_closed .btn__main-menu {
+    width: 30px;
+    height: 27px;
+    top: 10px;
+  }
+
+  .navbar__js_opened .btn__main-menu {
+    width: 25px;
+    height: 22px;
+    top: 12px;
+  }
+}
+
+@media (min-width: $l-min) {
+  .btn__main-menu {
+    top: 30px;
+  }
+}
+

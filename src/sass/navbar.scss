@@ -12,6 +12,10 @@
 }
 
 @media (max-width: $s-max) {
+  .navbar__js_closed .navbar__menu-list {
+    display: none;
+  }
+
   .navbar__content {
     display: flex;
     flex-direction: column;
@@ -27,14 +31,63 @@
     flex-direction: column;
   }
 
+  .navbar__logo {
+    margin-left: 10px;
+  }
 
+  .navbar__about {
+    order: 1;
+  }
+
+  .navbar__user {
+    order: 2;
+  }
 }
 
 @media (min-width: $m-min) and (max-width: $m-max) {
+  .navbar__js_closed .navbar__menu-list {
+    display: none;
+  }
 
+  .navbar__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar__menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar__logo {
+    margin-left: 10px;
+  }
+
+  .navbar__about {
+    order: 1;
+  }
+
+  .navbar__user {
+    order: 2;
+  }
 }
 
 @media (min-width: $l-min) {
+  .navbar__menu-list {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 0;
+    top: 0;
+    width: 80%;
+  }
+
   .navbar__about {
     flex-grow: 3;
   }
@@ -46,5 +99,23 @@
   .navbar__logo {
     padding: 2px;
     padding-right: 12px;
+  }
+}
+
+@media (min-width: $l-min) and (max-width: $l-max) {
+  .navbar__content {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $l-content;
+  }
+}
+
+@media (min-width: $xl-min) {
+  .navbar__content {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $xl-content;
   }
 }

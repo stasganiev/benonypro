@@ -11,3 +11,48 @@
   //   background-image: url("../img/bg-back-mobile@2x.jpg");
   // }
 }
+
+@media (max-width: $s-max) {
+  .face {
+    padding-top: 30px;
+  }
+
+  .face__present {
+    order: 1;
+  }
+
+  .face__portret-box {
+    order: 2;
+  }
+
+  .face__btn {
+    order: 3;
+  }
+
+  .face__present-fullname {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    @include colors($txt-color, $bk-color);
+  }
+
+  .face__present-name {
+    margin-right: 15px;
+  }
+
+  .face__btn {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+
+}
+
+@media (min-width: $l-min) {
+
+}

@@ -12,7 +12,10 @@
 }
 
 .btn-accept {
-
+  @include colors($color-btn-accept, $color-btn-accept-bk);
+  padding: 12px 25px 14px 25px;
+  border-radius: 4px;
+  font-size: 18px;
 }
 
 // ////////////////////////////

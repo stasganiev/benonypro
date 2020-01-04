@@ -26,7 +26,8 @@ $l-content: ($l-min - 2 * $l-padding);
 $xl-content: ($xl-min - 2 * $xl-padding);
 
 // основные цвета
-$bk-color: #ffffff;
+$bk-color: #f8f8f8;
+$bk-color-outline: #e5e5e5;
 $bk-color-dark: #e5e5e5;
 $bk-color-light: #83c3ff;
 
@@ -50,3 +51,12 @@ $color-menu-shadow: rgba(200, 200, 200, 0.15);
 // кнопки
 $color-btn-accept: #577590;
 $color-btn-accept-bk: #f3ca40;
+
+// социконки
+$color-social-unactive: #c0c0c0;
+$color-social-github: #3E75C3;
+$color-social-instagram: #5189AF;
+$color-social-telegram: #4aaee8;
+$color-social-skype: #3BAEDA;
+$color-social-facebook: #3F65A6;
+$color-social-youtube: #C12025;

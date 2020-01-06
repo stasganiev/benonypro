@@ -1,11 +1,3 @@
-.social {
-  margin-left: auto;
-}
-
-.social__item {
-  margin-left: 8px;
-}
-
 .social__img {
   fill: $color-social-unactive;
 }
@@ -44,4 +36,31 @@
 .social__img-youtube:focus,
 .social__img-youtube:active {
   fill: $color-social-youtube;
+}
+
+@media (max-width: $s-max) {
+  .social {
+    justify-content: space-around;
+  }
+
+  .social__img {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .social__item {
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: $l-min) {
+  .social {
+    margin-left: auto;
+  }
+
+  .social__item {
+    margin-left: 8px;
+  }
 }

@@ -15,9 +15,12 @@
     <!-- Собственные стили -->
     <link href="css/style_min.css" rel="stylesheet">
     <!-- Подключение шрифтов -->
-    <link rel="preload" href="fonts/NotoSansSC-Regular.otf" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/NotoSansSC-Light.otf" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/NotoSansSC-Bold.otf" as="font" crossorigin="anonymous">
+    <!-- <link rel="preload" href="fonts/NotoSansSC-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/NotoSansSC-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/NotoSansSC-Light.woff2" as="font" crossorigin="anonymous"> -->
+    <link rel="preload" href="fonts/Nunito-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Nunito-Bold.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Nunito-ExtraLight.ttf" as="font" crossorigin="anonymous">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/logo16.png">
 
@@ -146,11 +149,13 @@
 
   <footer class="footer">
 
-    <div class="container">
+    <div class="container ones-grid">
 
-      <div class="footer__social hidden_tablet hidden_mobile">
+      <div class="footer__brandname">@stas_ganiev</div>
+
+      <div class="footer__social">
         <ul class="social list-default flex">
-          <li class="social__item">
+          <li class="social__item hidden_mobile">
             <a class="social__link" href="https://github.com/stasganiev">
               <svg class="social__img social__img-github" width="28" height="28">
                 <use xlink:href="img/sprite.svg#icon-github"></use>
@@ -171,7 +176,7 @@
               </svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="social__item hidden_mobile">
             <a class="social__link" href="skype:gst_benony">
               <svg class="social__img social__img-skype" width="28" height="28">
                 <use xlink:href="img/sprite.svg#icon-skype"></use>
@@ -195,10 +200,8 @@
         </ul>
       </div>
 
-      <div class="footer__brandname">@stas_ganiev</div>
-
       <div class="footer__present hidden_mobile">
-        <div class="footer__present-fullname">
+        <div class="footer__present-fullname hidden_tablet">
           <p class="footer__present-name">Стас</p>
           <p class="footer__present-surname">Ганиев</p>
         </div>
@@ -208,7 +211,7 @@
         </div>
       </div>
 
-      <ul class="footer__articles list-default flex">
+      <ul class="footer__articles list-default">
         <li class="footer__article-item">Портфолио</li>
         <li class="footer__article-item">Улгуги</li>
         <li class="footer__article-item">Готовые решения</li>
@@ -216,7 +219,7 @@
       </ul>
 
       <div class="footer__rightme">
-        <button class="btn">Написать мне</button>
+        <a class="btn-rightme btn btn-footer" href="mailto:stas@benony.pro">Написать мне</a>
       </div>
 
       <div class="footer__logo">
@@ -226,9 +229,9 @@
       <div class="footer__copyright copyright">
         <div class="copyright__years">&copy;2019-2020</div>
         <div class="copyright__outhor">
-          <p class="copyright__outhor-text">Разработка</p>
           <a class="copyright__outhor-link" href="http://benony.pro/">
-            <img class="copyright__outhor-img" src="img/logo16.png" width="16" height="16" alt="SG">
+            <p class="copyright__outhor-text">Разработка:</p>
+            <img class="copyright__outhor-img" src="img/logo16.png" width="12" height="12" alt="SG">
           </a>
         </div>
       </div>

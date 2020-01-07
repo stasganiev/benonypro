@@ -32,24 +32,45 @@
 }
 
 .btn-footer {
-  @include colors($bk-color-footer, $txt-color-footer);
-  padding: 10px 22px 12px;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 400;
+  @include colors($txt-color-footer, $bk-color-footer);
+  border-radius: 50px;
   border: 2px solid $txt-color-footer;
 }
 
 .btn-footer:hover,
 .btn-footer:focus {
-  @include colors($txt-color-footer, $bk-color-footer);
+  @include colors($bk-color-footer, $txt-color-footer);
   outline: none;
 }
 
 .btn-footer:active {
-  @include colors($txt-color-footer, $bk-color-footer);
+  @include colors($bk-color-footer, $txt-color-footer);
   box-shadow: inset 0 0 0 5px $txt-color-footer;
   outline: none;
+}
+
+@media (max-width: $s-max) {
+  .btn-footer {
+    padding: 10px 22px 12px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .btn-footer {
+    padding: 8px 18px 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $l-min) {
+  .btn-footer {
+    padding: 8px 18px 10px;
+    font-size: 12px;
+    font-weight: 700;
+  }
 }
 
 // ////////////////////////////

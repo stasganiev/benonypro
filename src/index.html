@@ -15,9 +15,6 @@
     <!-- Собственные стили -->
     <link href="css/style_min.css" rel="stylesheet">
     <!-- Подключение шрифтов -->
-    <!-- <link rel="preload" href="fonts/NotoSansSC-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/NotoSansSC-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/NotoSansSC-Light.woff2" as="font" crossorigin="anonymous"> -->
     <link rel="preload" href="fonts/Nunito-Regular.ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Nunito-Bold.ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Nunito-ExtraLight.ttf" as="font" crossorigin="anonymous">
@@ -200,30 +197,40 @@
         </ul>
       </div>
 
-      <div class="footer__present hidden_mobile">
-        <div class="footer__present-fullname hidden_tablet">
-          <p class="footer__present-name">Стас</p>
-          <p class="footer__present-surname">Ганиев</p>
+      <div class="footer__content">
+
+        <div class="footer__present hidden_mobile">
+          <div class="footer__present-fullname hidden_tablet">
+            <p class="footer__present-name">Стас</p>
+            <p class="footer__present-surname">Ганиев</p>
+          </div>
+          <div class="footer__present-service">
+            <p class="footer__service">Разработа в 1С</p>
+            <p class="footer__service-marker hidden_mobile hidden_tablet">&bull;</p>
+            <p class="footer__service">Вёрстка сайтов</p>
+          </div>
         </div>
-        <div class="footer__present-service">
-          <p class="footer__service">Разработа в 1С</p>
-          <p class="footer__service">Вёрстка сайтов</p>
+
+        <ul class="footer__articles list-default">
+          <li class="footer__article-item">Портфолио</li>
+          <li class="footer__article-item">Улгуги</li>
+          <li class="footer__article-item">Готовые решения</li>
+          <li class="footer__article-item">Курсы</li>
+        </ul>
+
+        <div class="footer__rightme">
+          <a class="btn-rightme btn btn-footer" href="mailto:stas@benony.pro">Написать мне</a>
         </div>
-      </div>
 
-      <ul class="footer__articles list-default">
-        <li class="footer__article-item">Портфолио</li>
-        <li class="footer__article-item">Улгуги</li>
-        <li class="footer__article-item">Готовые решения</li>
-        <li class="footer__article-item">Обучение</li>
-      </ul>
+        <div class="footer__logo">
+          <picture>
+            <source media="(min-width: 1170px)" srcset="img/logo_footer.png 1x, img/logo_footer.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-head-tablet-x1.png 1x, img/logo-head-desktop-x1.png 2x">
+            <img class="footer__logo-img" src="img/logo_footer.png" srcset="img/logo_footer.png 2x" width="140" height="50" alt="Stas Ganiev">
+          </picture>
+          <!-- <img class="footer__logo-img" src="img/logo_footer.png" width="168" height="168" alt="stas_ganiev 1s and web"> -->
+        </div>
 
-      <div class="footer__rightme">
-        <a class="btn-rightme btn btn-footer" href="mailto:stas@benony.pro">Написать мне</a>
-      </div>
-
-      <div class="footer__logo">
-        <img class="footer__logo-img" src="img/logo_footer.png" width="168" height="168" alt="stas_ganiev 1s and web">
       </div>
 
       <div class="footer__copyright copyright">

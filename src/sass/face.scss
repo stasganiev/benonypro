@@ -1,0 +1,196 @@
+.face {
+  padding-bottom: 30px;
+  padding-top: 60px;
+
+  background-color: $bk-color;
+  // background-image: url("../img/bg-face.jpg");
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-size: cover;
+
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/bg-back-mobile@2x.jpg");
+  // }
+}
+
+@media (max-width: $s-max) {
+  .face {
+    padding-top: 35px;
+  }
+
+  .face__cover {
+    margin-top: 30px;
+  }
+
+  .face__present {
+    order: 1;
+  }
+
+  .face__portret-box {
+    order: 2;
+  }
+
+  .face__btn {
+    order: 3;
+  }
+
+  .face__present-fullname {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    @include colors($color-navbar-bk, $bk-color);
+  }
+
+  .face__present-name,
+  .face__present-surname {
+    margin: 0;
+  }
+
+  .face__present-name {
+    padding-left: 0;
+    margin-right: 15px;
+  }
+
+  .face__btn {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .face__cover {
+    position: relative;
+  }
+
+  .face__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .face__present {
+    flex-grow: 1;
+  }
+
+  .face__present-fullname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+    @include colors($color-navbar-bk, $bk-color);
+  }
+
+  .face__present-name,
+  .face__present-surname {
+    margin: 0;
+  }
+
+  .face__present-name {
+    margin-top: 100px;
+    padding-left: 20%;
+  }
+
+  .face__present-surname {
+    padding-left: 30%;
+  }
+
+  .face__present-service {
+    position: relative;
+
+    padding-left: 30%;
+
+    font-size: 16px;
+    font-weight: bold;
+    @include colors($color-btn-accept, $bk-color);
+  }
+
+  .face__present-service::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 20%;
+
+    height: 100%;
+    width: 12px;
+    background-color: $bk-color-light;
+    border-radius: 6px;
+  }
+}
+
+@media (min-width: $l-min) {
+  .face__cover {
+    position: relative;
+  }
+
+  .face__social {
+    display: flex;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .face__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .face__present {
+    flex-grow: 1;
+  }
+
+  .face__present-fullname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+    @include colors($color-navbar-bk, $bk-color);
+  }
+
+  .face__present-name,
+  .face__present-surname {
+    margin: 0;
+  }
+
+  .face__present-name {
+    margin-top: 100px;
+    padding-left: 20%;
+  }
+
+  .face__present-surname {
+    padding-left: 30%;
+  }
+
+  .face__present-service {
+    position: relative;
+
+    padding-left: 30%;
+
+    font-size: 16px;
+    font-weight: bold;
+    @include colors($color-btn-accept, $bk-color);
+  }
+
+  .face__present-service::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 20%;
+
+    height: 100%;
+    width: 12px;
+    background-color: $bk-color-light;
+    border-radius: 6px;
+  }
+}

@@ -1,5 +1,11 @@
+.social {
+  z-index: 3;
+}
+
 .social__img {
   fill: $color-social-unactive;
+  width: 28px;
+  height: 28px;
 }
 
 .social__img-github:hover,
@@ -46,6 +52,22 @@
   .social__img {
     width: 54px;
     height: 54px;
+  }
+
+  .social__img-instagram {
+    fill: $color-social-instagram;
+  }
+
+  .social__img-telegram {
+    fill: $color-social-telegram;
+  }
+
+  .social__img-facebook {
+    fill: $color-social-facebook;
+  }
+
+  .social__img-youtube {
+    fill: $color-social-youtube;
   }
 }
 

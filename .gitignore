@@ -12,3 +12,4 @@ src/css/*.css
 src/css/*.map
 Thumbs.db
 public/
+temp/

@@ -2,40 +2,25 @@
 // Шрифты
 // ////////////////////////////
 @font-face {
-  // font-weight: normal;
-  // font-family: "Noto Sans SC";
-  // src: url("../fonts/NotoSansSC-Regular.woff2") format("woff2"), url("../fonts/NotoSansSC-Regular.woff") format("woff");
-
   font-weight: 400;
   font-family: "Nunito";
   src: url("../fonts/Nunito-Regular.ttf");
-
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  // font-weight: bold;
-  // font-family: "Noto Sans SC";
-  // src: url("../fonts/NotoSansSC-Bold.woff2") format("woff2"), url("../fonts/NotoSansSC-Bold.woff") format("woff");
-
   font-weight: 700;
   font-family: "Nunito";
   src: url("../fonts/Nunito-Bold.ttf");
-
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  // font-weight: 300;
-  // font-family: "Noto Sans SC";
-  // src: url("../fonts/NotoSansSC-Light.woff2") format("woff2"), url("../fonts/NotoSansSC-Light.woff") format("woff");
-
   font-weight: 200;
   font-family: "Nunito";
   src: url("../fonts/Nunito-ExtraLight.ttf");
-
   font-style: normal;
   font-display: swap;
 }

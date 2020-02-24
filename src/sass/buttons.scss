@@ -1,77 +1,80 @@
+// ////////////////////////////
+// Общая стилизация кнопок
+// ////////////////////////////
 .btn {
+  appearance: none;
+  display: inline-block;
   margin: 0;
   padding: 0;
+  min-width: 100px;
+
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+
   color: inherit;
   background-color: transparent;
+  text-decoration: none;
+
   border: none;
+  border-radius: 0;
   box-shadow: none;
   cursor: pointer;
-}
+  transition: 0.3s ease-out;
 
-.btn-accept {
-  @include colors($color-btn-accept, $color-btn-accept-bk);
-  padding: 12px 25px 14px;
-  border-radius: 4px;
-  font-size: 18px;
-}
+  // размер
+  &_s {
+    padding: 8px 14px;
+  }
 
-.btn-accept:hover,
-.btn-accept:focus {
-  background-color: $color-btn-accept-bk-hover;
-  box-shadow: 2px 2px 15px 0 $color-btn-accept-bk-hover;
-  outline: none;
-}
+  &_m {
+    padding: 10px 16px;
+  }
 
-.btn-accept:active {
-  background-color: $color-btn-accept-bk-active;
-  box-shadow: 2px 2px 7px 0 $color-btn-accept-bk-hover;
-  outline: none;
-}
+  &_l {
+    padding: 14px 21px;
+  }
 
-.btn-footer {
-  @include colors($txt-color-footer, $bk-color-footer);
-  border-radius: 50px;
-  border: 2px solid $txt-color-footer;
-}
+  // цвет
+  &_light {
 
-.btn-footer:hover,
-.btn-footer:focus {
-  @include colors($bk-color-footer, $txt-color-footer);
-  outline: none;
-}
+  }
 
-.btn-footer:active {
-  @include colors($bk-color-footer, $txt-color-footer);
-  box-shadow: inset 0 0 0 5px $txt-color-footer;
-  outline: none;
-}
+  &_dark {
 
-@media (max-width: $s-max) {
-  .btn-footer {
-    padding: 10px 22px 12px;
-    font-size: 16px;
-    font-weight: 400;
+  }
+
+  // тень
+  &_shdw {
+
+  }
+
+  // рамка
+  &_brd {
+    border-radius: 5px;
+  }
+
+  // поведение
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
   }
 }
 
-@media (min-width: $m-min) and (max-width: $m-max) {
-  .btn-footer {
-    padding: 8px 18px 10px;
-    font-size: 14px;
-    font-weight: 400;
-  }
-}
+// размер
 
-@media (min-width: $l-min) {
-  .btn-footer {
-    padding: 8px 18px 10px;
-    font-size: 12px;
-    font-weight: 700;
-  }
-}
+// цвет
+
+//
 
 // ////////////////////////////
 // Главное меню (кнопка "Бургер")

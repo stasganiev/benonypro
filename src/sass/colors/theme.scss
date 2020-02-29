@@ -1,0 +1,7 @@
+body {
+  @include colors($txt-clr, $bg-clr);
+}
+
+.header {
+  @include colors($base-clr-light, $base-clr-dark);
+}

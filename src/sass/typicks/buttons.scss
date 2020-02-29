@@ -20,7 +20,7 @@
   border-radius: 0;
   box-shadow: none;
   cursor: pointer;
-  transition: 0.3s ease-out;
+  transition: 0.2s ease-out;
 
   // размер
   &_s {
@@ -35,38 +35,59 @@
     padding: 14px 21px;
   }
 
-  // цвет
-  &_light {
+  // Оформление (цвет, тень, рамка) и поведение
+  &_normal {
+    @include colors($btn-clr, $btn-clr-bg);
+    border: 1px solid $btn-clr-bg;
+    border-radius: 4px;
 
+    &:hover {
+      color: $btn-clr-bg;
+      border: 1px solid $btn-clr-bg;
+      background-color: transparent;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(124, 49, 8, 0.11);
+    }
+  }
+
+  &_light {
+    @include colors($base-clr-other, $btn-clr-bg-light);
+    border: 1px solid $btn-clr-bg-light;
+    border-radius: 4px;
+
+    &:hover {
+      color: $btn-clr-bg-light;
+      border: 1px solid $btn-clr-bg-light;
+      background-color: transparent;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(124, 49, 8, 0.11);
+    }
   }
 
   &_dark {
+    @include colors($btn-clr-dark, $btn-clr-bg-dark);
+    border: 1px solid $btn-clr-dark;
+    border-radius: 4px;
 
-  }
+    &:hover {
+      color: $btn-clr-dark;
+      border: 1px solid $btn-clr-dark;
+      background-color: transparent;
+    }
 
-  // тень
-  &_shdw {
-
-  }
-
-  // рамка
-  &_brd {
-    border-radius: 5px;
-  }
-
-  // поведение
-  &:hover {
-    background-color: transparent;
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px #cbd6ee;
-  }
-
-  &:active {
-    outline: none;
-    box-shadow: 0 0 0 4px #cbd6ee;
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(124, 49, 8, 0.11);
+    }
   }
 }
 

@@ -31,7 +31,14 @@
     <nav class="header__nav navbar">
       <div class="logo">
         <a href="" class="logo-link">
-          <img src="img/temp.jpg" width="100" height="40" alt="GS" class="logo__img">
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x"> -->
+            <source media="(min-width: 1170px)" srcset="img/logo-head-desktop-x1.png 1x, img/logo-head-desktop-x2.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-head-tablet-x1.png 1x, img/logo-head-tablet-x2.png 2x">
+            <img class="logo__img" src="img/logo-head-mobile-x1.png" srcset="img/logo-head-mobile-x2.png 2x" width="150" height="54" alt="GS">
+          </picture>
         </a>
       </div>
       <div class="navbar__main-nav">
@@ -72,7 +79,7 @@
         </div>
       </div>
 
-      <button class="btn btn_m btn_light btn-writeme-js">Написать мне</button>
+      <a class="btn btn_m btn_normal btn-writeme-js" href="mailto:stas@benony.pro">Написать мне</a>
 
     </div>
 
@@ -82,21 +89,21 @@
           <a href="" class="puzzle__menu-block">
             <h3 class="puzzle__title">Разработка в 1С</h3>
             <p class="puzzle__text">Автоматизация ваших бизнес-задач</p>
-            <button class="btn btn__puzzle-block-1-js hidden">Подробнее</button>
+            <button class="btn btn_s btn_light btn__puzzle-block-1-js">Подробнее</button>
           </a>
         </li>
         <li class="puzzle__menu-item">
           <a href="" class="puzzle__menu-block">
             <h3 class="puzzle__title">Вёрстка сайтов</h3>
             <p class="puzzle__text">Привлекательные, удобные, продающие сайты</p>
-            <button class="btn btn__puzzle-block-2-js hidden">Подробнее</button>
+            <button class="btn btn_s btn_light btn__puzzle-block-2-js">Подробнее</button>
           </a>
         </li>
         <li class="puzzle__menu-item">
           <a href="" class="puzzle__menu-block">
             <h3 class="puzzle__title">Обо мне</h3>
             <p class="puzzle__text">Архитектор 1С, ментор в HTML-Academy, спикер Infostart</p>
-            <button class="btn btn__puzzle-block-3-js hidden">Подробнее</button>
+            <button class="btn btn_s btn_light btn__puzzle-block-3-js">Подробнее</button>
           </a>
         </li>
       </ul>

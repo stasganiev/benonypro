@@ -50,9 +50,6 @@ body {
   font-size: 12px;
   line-height: 1.25;
   font-weight: 400;
-  color: $txt-color;
-
-  background-color: $bk-color-outline;
 }
 
 main {
@@ -82,43 +79,3 @@ a {
   padding: 0;
   margin: 0;
 }
-
-// ////////////////////////////
-// Шаблоны
-// ////////////////////////////
-
-// Медиа-сетка 3
-
-// @media (max-width: $s-max) {
-
-// }
-
-// @media (min-width: $m-min) and (max-width: $m-max) {
-
-// }
-
-// @media (min-width: $l-min) {
-
-// }
-
-// Медиа-сетка 5
-
-// @media (max-width: $xs-max) {
-
-// }
-
-// @media (min-width: $s-min) and (max-width: $s-max) {
-
-// }
-
-// @media (min-width: $m-min) and (max-width: $m-max) {
-
-// }
-
-// @media (min-width: $l-min) and (max-width: $l-max) {
-
-// }
-
-// @media (min-width: $xl-min) {
-
-// }

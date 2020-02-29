@@ -1,12 +1,17 @@
 // Общие
-@import "colors/basecolors.scss";
+// @import "colors/basecolors.scss";
 @import "base/vars.scss";
 @import "colors/colors.scss";
 @import "base/mixins.scss";
 @import "base/base.scss";
 @import "layouts/layouts.scss";
-@import "typicks/buttons.scss";
 // Блоки
+@import "typicks/buttons.scss";
 @import "typicks/copyright.scss";
+@import "blocks/navbar.scss";
+@import "blocks/logo.scss";
+@import "blocks/header.scss";
+// Типографика и цвета
+@import "colors/theme.scss";
 // Служебные
 // @import "outlines.scss";

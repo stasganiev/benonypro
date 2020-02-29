@@ -1,13 +1,24 @@
 // основные цвета
-$bk-color: #ffffff;
-$bk-color-outline: #e5e5e5;
-$bk-color-footer: #101030;
-$bk-color-dark: #e5e5e5;
-$bk-color-light: #83c3ff;
+$base-clr-light: #f8f3e3;
+$base-clr-dark: #46322b;
+$base-clr-accent: #f57b39;
+$base-clr-other: #b83933;
 
-$txt-color: #000000;
-$txt-color-footer: #e5e5e5;
-$txt-color-light: #ffffff;
+$bg-clr: #fdfdfd;
+$txt-clr: #201510;
+
+// кнопки
+$btn-clr: $base-clr-light;
+$btn-clr-bg: $base-clr-accent;
+$btn-clr-light: $base-clr-light;
+$btn-clr-bg-light: lighten($base-clr-accent, 15%);
+$btn-clr-dark: $base-clr-light;
+$btn-clr-bg-dark: darken($base-clr-accent, 15%);
+
+// формы, элементы формы
+$input-clr: $base-clr-dark;
+$input-clr-bg: $base-clr-light;
+$input-clr-brd: $base-clr-other;
 
 // меню и навигация
 $color-btn-menu: #dddddd;
@@ -22,13 +33,6 @@ $color-navbar-bk: rgba(15, 42, 98, 0.85);
 
 $color-menu-border: rgb(6, 23, 58);
 $color-menu-shadow: rgba(200, 200, 200, 0.15);
-
-// кнопки
-$color-btn-accept: #577590;
-$color-btn-accept-bk: #f3ca40;
-$color-btn-accept-bk-hover: #e3ba30;
-$color-btn-accept-bk-active: #d3aa20;
-$color-btn-accept-shadow: rgba(255, 218, 80, 0.3);
 
 // социконки
 $color-social-unactive: #c0c0c0;

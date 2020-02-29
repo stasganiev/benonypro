@@ -1,0 +1,17 @@
+@media (max-width: $s-max) {
+  .logo__img {
+    @include size(34px, 50px);
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .logo__img {
+    @include size(100px, 36px);
+  }
+}
+
+@media (min-width: $l-min) {
+  .logo__img {
+    @include size(150px, 54px);
+  }
+}

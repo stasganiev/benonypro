@@ -43,7 +43,7 @@
       </div>
       <div class="navbar__main-nav">
         <form action="" class="form-search">
-          <input type="text" class="form-search__input" placeholder="Найти">
+          <input type="text" class="input input_search form-search__input" placeholder="Найти">
         </form>
         <button class="btn__main-menu navbar__js_closed navbar__js_nojs"></button>
         <ul class="navbar__main-menu main-menu visually-hidden list-default">
@@ -112,6 +112,16 @@
   </header>
 
   <div class="triangle triangle_1"></div>
+
+  <form action="" class="form form-contact">
+    <div class="form__content">
+      <label class="input__label" for="fc-message">Текст сообщения:</label>
+      <textarea class="input" name="fc-message" id="fc-message" rows="4" placeholder="Что вы хотите сообщить?"></textarea>
+      <label class="input__label" for="fc-username">Ваше имя:</label>
+      <input class="input" type="text" id="fc-username" name="fc-username" placeholder="Как к вам обращаться?" required>
+      <button class="btn btn_m btn_dark" type="submit">Отправить</button>
+    </div>
+  </form>
 
   <!-- <img class="" src="" width="" height="" alt=""> -->
   <!-- <picture>

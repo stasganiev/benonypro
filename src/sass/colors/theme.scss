@@ -3,5 +3,5 @@ body {
 }
 
 .header {
-  @include colors($base-clr-light, $base-clr-dark);
+  @include colors($base-clr-light, #ffffff);
 }

@@ -39,7 +39,7 @@
   &_normal {
     @include colors($btn-clr, $btn-clr-bg);
     border: 1px solid $btn-clr-bg;
-    border-radius: 4px;
+    border-radius: 6px;
 
     &:hover {
       color: $btn-clr-bg;
@@ -74,7 +74,7 @@
 
   &_dark {
     @include colors($btn-clr-dark, $btn-clr-bg-dark);
-    border: 1px solid $btn-clr-dark;
+    border: 1px solid $btn-clr-bg-dark;
     border-radius: 4px;
 
     &:hover {

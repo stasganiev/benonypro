@@ -5,3 +5,25 @@ body {
 .header {
   @include colors($base-clr-light, #ffffff);
 }
+
+.form {
+  &_contact {
+    @include colors($form-clr, $form-clr-bg);
+    box-shadow: 0 0 32px rgba(10, 10, 10, 0.15);
+  }
+}
+
+.input {
+  @include colors($input-clr, $input-clr-bg);
+  border-color: $input-clr-brd;
+
+  &_search {
+    color: $bg-clr;
+    background-color: transparent;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $input-clr-brd-active;
+  }
+}

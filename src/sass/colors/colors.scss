@@ -17,9 +17,12 @@ $btn-clr-dark: $base-clr-light;
 $btn-clr-bg-dark: darken($base-clr-accent, 15%);
 
 // формы, элементы формы
+$form-clr: lighten($base-clr-light, 10%);
+$form-clr-bg: $base-clr-dark;
 $input-clr: $base-clr-dark;
 $input-clr-bg: $base-clr-light;
-$input-clr-brd: $base-clr-other;
+$input-clr-brd: darken($base-clr-light, 25%);
+$input-clr-brd-active: lighten($base-clr-other, 20%);
 
 // меню и навигация
 $color-btn-menu: #dddddd;

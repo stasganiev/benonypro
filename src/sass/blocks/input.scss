@@ -1,6 +1,18 @@
 .input {
+  margin-bottom: 18px;
+  padding: 10px 16px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  transition: 0.4s ease-out;
 
-  &_search {
+  &__label {
+    margin-bottom: 6px;
+  }
 
+  &:focus,
+  &:active {
+    outline: none;
+    border-radius: 0;
   }
 }

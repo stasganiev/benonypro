@@ -1,0 +1,11 @@
+.puzzle {
+  &__menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  &__menu-item {
+    max-width: 200px;
+  }
+}

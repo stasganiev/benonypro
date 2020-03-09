@@ -1,8 +1,46 @@
 .title {
+  margin-bottom: 24px;
+  // &__content {
+  // }
+
+  &__heads {
+    padding-left: 20px;
+    margin-bottom: 8px;
+
+    position: relative;
+     &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 8px;
+      height: 100%;
+    }
+  }
+
   &__head {
+    @include nospace;
+    margin-bottom: 5px;
     font-size: 24px;
     font-style: normal;
     font-weight: 100;
     text-transform: uppercase;
+  }
+
+  &__subhead {
+    @include nospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  &__notation {
+    @include nospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
   }
 }

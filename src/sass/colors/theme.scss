@@ -6,10 +6,24 @@ body {
   @include colors($base-clr-light, #ffffff);
 }
 
+.title {
+  &__heads::before {
+    background-color: $base-clr-other;
+  }
+
+  &__notation {
+    color: $base-clr-other-lighten;
+  }
+}
+
 .form {
   &_contact {
     @include colors($form-clr, $form-clr-bg);
-    box-shadow: 0 0 32px rgba(10, 10, 10, 0.15);
+    box-shadow: 0 0 2px rgba(3, 37, 57, 0.05),
+                0 0 4px rgba(3, 37, 57, 0.08),
+                0 0 8px rgba(3, 37, 57, 0.10),
+                0 0 16px rgba(3, 37, 57, 0.12),
+                0 0 32px rgba(3, 37, 57, 0.14);
   }
 }
 

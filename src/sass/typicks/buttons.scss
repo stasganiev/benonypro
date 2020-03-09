@@ -10,6 +10,7 @@
 
   font-family: inherit;
   font-size: inherit;
+  font-weight: 700;
   line-height: inherit;
 
   color: inherit;
@@ -25,14 +26,17 @@
   // размер
   &_s {
     padding: 8px 14px;
+    font-size: 14px;
   }
 
   &_m {
     padding: 10px 16px;
+    font-size: 14px;
   }
 
   &_l {
     padding: 14px 21px;
+    font-size: 16px;
   }
 
   // Оформление (цвет, тень, рамка) и поведение
@@ -55,7 +59,7 @@
   }
 
   &_light {
-    @include colors($base-clr-other, $btn-clr-bg-light);
+    @include colors($base-clr-other-darken, $btn-clr-bg-light);
     border: 1px solid $btn-clr-bg-light;
     border-radius: 4px;
 

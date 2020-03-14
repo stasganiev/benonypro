@@ -23,6 +23,10 @@
   cursor: pointer;
   transition: 0.2s ease-out;
 
+  &_nospace {
+    min-width: unset;
+  }
+
   // размер
   &_s {
     padding: 8px 14px;
@@ -95,20 +99,20 @@
   }
 }
 
-// размер
-
-// цвет
-
-//
-
 // ////////////////////////////
 // Главное меню (кнопка "Бургер")
 // ////////////////////////////
 .btn__main-menu {
   position: absolute;
-  right: 10px;
+  right: 0;
 
   cursor: pointer;
+  transition: none;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }
 
 .navbar__js_closed .btn__main-menu {
@@ -122,19 +126,16 @@
     width: 30px;
     height: 3px;
 
-    background-color: $color-btn-menu;
-    box-shadow: 0 8px 0 0 $color-btn-menu, 0 16px 0 0 $color-btn-menu;
+    background-color: $btn-clr-bg-light;
+    box-shadow: 0 8px 0 0 $btn-clr-bg-light, 0 16px 0 0 $btn-clr-bg-light;
   }
 
   &:hover::before,
-  &:focus::before {
-    background-color: $color-btn-menu-hover;
-    box-shadow: 0 8px 0 0 $color-btn-menu-hover, 0 16px 0 0 $color-btn-menu-hover;
-  }
-
+  &:focus::before,
   &:active::before {
-    background-color: $color-btn-menu-active;
-    box-shadow: 0 8px 0 0 $color-btn-menu-active, 0 16px 0 0 $color-btn-menu-active;
+    background-color: $btn-clr-dark;
+    box-shadow: 0 8px 0 0 $btn-clr-dark, 0 16px 0 0 $btn-clr-dark;
+    outline: none;
   }
 }
 
@@ -144,13 +145,13 @@
     content: "";
 
     position: absolute;
-    top: 8px;
+    top: 0;
     right: 0;
 
     width: 25px;
     height: 4px;
 
-    background-color: $color-btn-menu;
+    background-color: $btn-clr-bg-light;
   }
 
   &::before {
@@ -164,13 +165,11 @@
   &:hover::before,
   &:focus::before,
   &:hover::after,
-  &:focus::after {
-    background-color: $color-btn-menu-hover;
-  }
-
+  &:focus::after,
   &:active::before,
   &:active::after {
-    background-color: $color-btn-menu-active;
+    background-color: $btn-clr-dark;
+    outline: none;
   }
 }
 
@@ -179,43 +178,29 @@
 }
 
 @media (max-width: $s-max) {
-  .btn__main-menu {
-    top: 15px;
-  }
-
   .navbar__js_closed .btn__main-menu {
     width: 30px;
     height: 27px;
-    top: 10px;
+    top: 17px;
   }
 
   .navbar__js_opened .btn__main-menu {
     width: 25px;
     height: 22px;
-    top: 12px;
+    top: 23px;
   }
 }
 
 @media (min-width: $m-min) and (max-width: $m-max) {
-  .btn__main-menu {
-    top: 15px;
-  }
-
   .navbar__js_closed .btn__main-menu {
     width: 30px;
     height: 27px;
-    top: 10px;
+    top: 17px;
   }
 
   .navbar__js_opened .btn__main-menu {
     width: 25px;
     height: 22px;
-    top: 12px;
-  }
-}
-
-@media (min-width: $l-min) {
-  .btn__main-menu {
-    top: 30px;
+    top: 23px;
   }
 }

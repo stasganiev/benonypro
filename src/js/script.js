@@ -1,5 +1,5 @@
-var siteNav = document.querySelector(".navbar__content");
-var siteNavBtn = document.querySelector(".navbar__btn-menu");
+var siteNav = document.querySelector(".navbar");
+var siteNavBtn = document.querySelector(".navbar__btn-menu-js");
 
 siteNav.classList.remove("navbar__js_nojs");
 

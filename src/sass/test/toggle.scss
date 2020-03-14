@@ -7,18 +7,18 @@
     position: relative;
     box-sizing: border-box;
     cursor: pointer;
-    width: 8em;
-    height: 3em;
-    background: #fff;
+    width: 60px;
+    height: 20px;
+    background: $base-clr-light;
     transition: all 0.3s ease;
     &:before {
       // moving square
       content: "";
       display: block;
       position: absolute;
-      width: 4em;
-      height: 3em;
-      background: #f0134d;
+      width: 30px;
+      height: 20px;
+      // background: #f0134d;
       transition: 0.3s ease;
       z-index: 1;
     }
@@ -44,30 +44,30 @@
       content: "";
       display: block;
       position: absolute;
-      width: 4em;
-      height: 3em;
+      width: 30px;
+      height: 20px;
       z-index: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #888;
+      // color: #888;
       letter-spacing: 1px;
     }
     &:before {
       // background on-off label
-      content: "ON";
+      content: "";
     }
     &:after {
       // background on-off label
-      content: "OFF";
-      left: 4em;
+      content: "";
+      left: 30px;
     }
   }
   input:checked + label {
     &:before {
       // moving square
-      background: #40bfc1;
-      transform: translateX(4em);
+      // background: #40bfc1;
+      transform: translateX(30px);
     }
   }
   input:disabled {
@@ -78,72 +78,28 @@
     }
     & + label {
       // background
-      background: #ccc !important;
+      background: $base-clr-light-darken !important;
       cursor: not-allowed !important;
       &:before {
         // moving square
-        background: #ddd !important;
+        background: $base-clr-light !important;
       }
     }
   }
 }
-.mt-square-garden {
-  @extend .mt-square;
-  label {
-    &:before {
-      // moving square
-      background: #ff2e63;
-    }
-  }
-  input:checked + label {
-    &:before {
-      // moving square
-      background: #21bf73;
-    }
-  }
-}
-.mt-square-tomato {
-  @extend .mt-square;
-  label {
-    &:before {
-      // moving square
-      background: #ff6347;
-    }
-  }
-  input:checked + label {
-    &:before {
-      // moving square
-      background: #32cd32;
-    }
-  }
-}
+
 .mt-square-matcha {
   @extend .mt-square;
   label {
     &:before {
       // moving square
-      background: #5b5656;
+      background: $base-clr-accent-darken;
     }
   }
   input:checked + label {
     &:before {
       // moving square
-      background: #7fcd91;
-    }
-  }
-}
-.mt-square-pink {
-  @extend .mt-square;
-  label {
-    &:before {
-      // moving square
-      background: #ffe3ed;
-    }
-  }
-  input:checked + label {
-    &:before {
-      // moving square
-      background: #beebe9;
+      background: $base-clr-accent-lighten;
     }
   }
 }

@@ -1,21 +1,37 @@
 .form-search {
-  &__search-box {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  margin-right: 70px;
 
+  &__search-box {
+    position: relative;
+    margin-right: 12px;
   }
 
   &__input{
+    padding-right: 35px;
 
+    &:focus + .form-search__btn-search svg,
+    &:active + .form-search__btn-search svg {
+      fill: $input-clr-brd-active;
+    }
   }
 
   &__btn-search {
+    position: absolute;
+    padding: 4px;
+    top: 2px;
+    right: 3px;
 
-  }
-
-  &__btn-search svg {
-    fill: $base-clr-accent-lighten;
+    & svg {
+      width: 20px;
+      height: 20px;
+      fill: $base-clr-accent-lighten;
+    }
   }
 
   &__toggle {
-
+    margin: auto;
   }
 }

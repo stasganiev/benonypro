@@ -6,7 +6,7 @@
 @import "base/base.scss";
 @import "layouts/layouts.scss";
 // Блоки
-@import "typicks/buttons.scss";
+@import "typicks/buttons.scss"; //-цвета
 @import "typicks/copyright.scss";
 @import "blocks/navbar.scss";
 @import "blocks/logo.scss";
@@ -16,10 +16,10 @@
 @import "blocks/puzzle.scss";
 // Формы
 @import "blocks/form.scss";
-@import "blocks/form-search.scss";
+@import "blocks/form-search.scss"; //-цвета
 @import "blocks/input.scss";
 // Типографика и цвета
 @import "colors/theme.scss";
-@import "test/toggle.scss";
+@import "test/toggle.scss"; //-цвета
 // Служебные
 // @import "layouts/outlines.scss";

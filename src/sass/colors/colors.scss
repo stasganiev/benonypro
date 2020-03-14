@@ -1,23 +1,8 @@
 // основные цвета
-// $base-clr-light: #f8f3e3;
-// $base-clr-dark: #46322b;
-// $base-clr-accent: #f57b39;
-// $base-clr-other: #b83933;
-
-// $base-clr-light: #f3f0e2;
-// $base-clr-dark: #2e364f;
-// $base-clr-accent: #ef5939;
-// $base-clr-other: #2d5d7c;
-
-// $base-clr-light: #F2F1D3;
-// $base-clr-dark: #293858;
-// $base-clr-accent: #DD5D00;
-// $base-clr-other: #F7BC13;
-
 $base-clr-light: #fbf3f2;
 $base-clr-dark: #032539;
-$base-clr-accent: #fa991c;
-$base-clr-other: #1c768f;
+$base-clr-other: #fa991c;
+$base-clr-accent: #1c768f;
 
 // производные от базовой палитры
 $base-clr-light-lighten: lighten($base-clr-light, 10%);
@@ -30,7 +15,7 @@ $base-clr-other-darken: darken($base-clr-other, 10%);
 // типографика
 $bg-clr: #fdfdfd;
 $bg-clr-dark: #032539e6;
-$txt-clr: #101013;
+$txt-clr: #141418;
 
 // кнопки
 $btn-clr: $base-clr-light;
@@ -45,8 +30,8 @@ $form-clr: $base-clr-light-lighten;
 $form-clr-bg: $base-clr-dark;
 $input-clr: $base-clr-dark;
 $input-clr-bg: $base-clr-light;
-$input-clr-brd: $base-clr-light;
-$input-clr-brd-active: $base-clr-other-lighten;
+$input-clr-brd: $base-clr-accent-lighten;
+$input-clr-brd-active: $base-clr-light;
 
 // меню и навигация
 $color-btn-menu: #dddddd;

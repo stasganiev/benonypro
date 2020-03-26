@@ -1,8 +1,22 @@
 // основные цвета
-$base-clr-light: #fbf3f2;
-$base-clr-dark: #032539;
-$base-clr-other: #fa991c;
-$base-clr-accent: #1c768f;
+// $base-clr-light: #fbf3f2;
+// $base-clr-dark: #032539;
+// $base-clr-other: #fa991c;
+// $base-clr-accent: #1c768f;
+
+// Кофе, оранжевый
+// $base-clr-light: #f8f3e3;
+// $base-clr-dark: #46322b;
+// $base-clr-accent: #f57b39;
+// $base-clr-other: #b83933;
+
+$basecolor-sketch-blue: #577590;
+$basecolor-sketch-yellow: #F3CA40;
+
+$base-clr-light: #f8f3e3;
+$base-clr-dark: $basecolor-sketch-blue;
+$base-clr-accent: #b35417;
+$base-clr-other: #b83933;
 
 // производные от базовой палитры
 $base-clr-light-lighten: lighten($base-clr-light, 10%);

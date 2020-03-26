@@ -104,7 +104,8 @@
 // ////////////////////////////
 .btn__main-menu {
   position: absolute;
-  right: 0;
+  top: 7px;
+  right: 10px;
 
   cursor: pointer;
   transition: none;
@@ -120,21 +121,22 @@
     content: "";
 
     position: absolute;
-    top: 0;
+    top: 7px;
     right: 0;
 
-    width: 30px;
-    height: 3px;
+    width: 27px;
+    height: 4px;
+    border-radius: 3px;
 
     background-color: $btn-clr-bg-light;
-    box-shadow: 0 8px 0 0 $btn-clr-bg-light, 0 16px 0 0 $btn-clr-bg-light;
+    box-shadow: 0 10px 0 0 $btn-clr-bg-light, 0 20px 0 0 $btn-clr-bg-light;
   }
 
   &:hover::before,
   &:focus::before,
   &:active::before {
     background-color: $btn-clr-dark;
-    box-shadow: 0 8px 0 0 $btn-clr-dark, 0 16px 0 0 $btn-clr-dark;
+    box-shadow: 0 10px 0 0 $btn-clr-dark, 0 20px 0 0 $btn-clr-dark;
     outline: none;
   }
 }
@@ -145,11 +147,12 @@
     content: "";
 
     position: absolute;
-    top: 0;
+    top: 17px;
     right: 0;
 
     width: 25px;
     height: 4px;
+    border-radius: 3px;
 
     background-color: $btn-clr-bg-light;
   }
@@ -187,7 +190,7 @@
   .navbar__js_opened .btn__main-menu {
     width: 25px;
     height: 22px;
-    top: 23px;
+    top: 17px;
   }
 }
 
@@ -201,6 +204,6 @@
   .navbar__js_opened .btn__main-menu {
     width: 25px;
     height: 22px;
-    top: 23px;
+    top: 17px;
   }
 }

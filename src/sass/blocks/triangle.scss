@@ -1,15 +1,15 @@
 .triangle {
-  display: inline-block;
-  margin: 0;
-  border: none;
-  width: 100%;
-  height: calc(100vw/10);
-  min-height: calc(100vw/10);
+  // display: inline-block;
+  // margin: 0;
+  // border: none;
+  // width: 100%;
+  // height: calc(100vw/10);
+  // min-height: calc(100vw/10);
 
-  &_1 {
-    background-image: url("../../img/bg-triangle-left.svg");
-    background-repeat: no-repeat;
-    background-position: -1px -1px;
-    background-size: contain;
-  }
+  // &_1 {
+  //   background-image: url("../../img/bg-triangle-left.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: -1px -1px;
+  //   background-size: contain;
+  // }
 }

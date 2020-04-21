@@ -4,24 +4,14 @@
   background-position: center center;
   background-size: cover;
 
-  // background-image: url("../../img/bg-square.svg"), url("../../img/bg-myself-600.jpg");
-  // background-repeat: no-repeat, no-repeat;
-  // background-position: 0 0, 40% center;
-  // background-size: 100% auto, auto 80%;
-
   &__nav {
     margin-top: 0;
     margin-bottom: 60px;
     padding: 10px;
-    // border-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    background-color: rgba(87, 117, 144, 0.6);
-    // box-shadow: 0 0 20px 20px rgba(55, 55, 55, 0.1),
-    //             // 0 0 2px rgba(55, 55, 55, 0.2),
-    //             // 0 0 4px rgba(55, 55, 55, 0.3),
-    //             // 0 0 8px rgba(55, 55, 55, 0.4),
-    //             0 0 10px 10px rgba(55, 55, 55, 0.5),;
+    // border-bottom-left-radius: 12px;
+    // border-bottom-right-radius: 12px;
+    background-color: rgba(87, 117, 144, 0.87);
+    // background-color: rgb(87, 117, 144);
   }
 
   &__face-cover {
@@ -31,14 +21,24 @@
 
   &__brand-title {
     position: absolute;
-    bottom: 0;
-    left: calc(50% + 80px);
-  }
+    top: 0;
+    left: 100px;
+    padding: 20px;
+    backdrop-filter: blur(7px) contrast(60%);
+    // backdrop-filter: blur(8px) saturate(120%) contrast(200%);
+
+    // background-image: url("../../img/bg-square1.svg"), url("../../img/bg-square2.svg");
+    // background-repeat: no-repeat, no-repeat;
+    // background-position: 0 0, 15px 15px;
+    // background-size: 160px 200px, 160px 200px;
+    }
 
   &__puzzle {
+    margin-bottom: -50px;
     padding: 10px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    background-color: rgba(87, 117, 144, 0.6);
+    // border-top-left-radius: 12px;
+    // border-top-right-radius: 12px;
+    background-color: rgba(87, 117, 144, 0.87);
+    // background-color: rgb(87, 117, 144);
   }
 }

@@ -4,20 +4,22 @@ $retina-dppx: 1.5dppx;
 
 // главная сетка
 $xs-min: 320px; //mobile * //360-410 px (elli)
-$xs-max: 599px;
+$xs-max: 599.9px;
 $s-min: 600px;
-$s-max: 767px;
+$s-max: 767.9px;
 $m-min: 768px; //tablet *
-$m-max: 1169px;
+$m-max: 1169.9px;
 $l-min: 1170px; //1280px //desktop *
-$l-max: 1439px;
-$xl-min: 1440px; //1560px //1920px (elli) - контент 1240-1360
+$l-max: 1559.9px;
+$xl-min: 1560px; //1440px //1920px (elli) - контент 1240-1360
+$xl-max: 1699.9px; //верхнее ограничение вьюпорта
+$viewport-out: 1700px;
 
-$xs-padding: 15px;
+$xs-padding: 0;
 $s-padding: 20px;
 $m-padding: 30px;
-$l-padding: 130px;
-$xl-padding: 150px;
+$l-padding: 140px;
+$xl-padding: 140px;
 
 $xs-content: ($xs-min - 2 * $xs-padding);
 $s-content: ($s-min - 2 * $s-padding);

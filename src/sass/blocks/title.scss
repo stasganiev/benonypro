@@ -1,17 +1,119 @@
 .title {
-  margin-bottom: 24px;
+  background-color: rgba(98, 98, 98, 0.75);
+  // backdrop-filter: blur(7px);
+  // backdrop-filter: blur(8px) saturate(120%) contrast(200%);
+}
 
-  &__heads {
+.title__content {
+  z-index: 10;
+}
+
+@media (max-width: $xs-max) {
+  .title {
+    padding-top: 20px;
+  }
+
+  .title__content {
+    margin-bottom: 20px;
+  }
+
+  .title__head {
+    @include nospace;
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .title__subhead {
+    display: none;
+  }
+
+  .title__notation {
+    @include nospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+
+    &_point {
+      padding: 0 6px;
+    }
+  }
+
+  .title__btn {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $s-min) and (max-width: $s-max) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .title__content {
+    margin-bottom: 23px;
+  }
+
+  .title__heads {
+    margin-bottom: 18px;
+  }
+
+  .title__head {
+    @include nospace;
+    margin-bottom: 7px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .title__subhead {
+    @include nospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .title__notation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include nospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .title {
+    padding: 25px;
+  }
+
+  .title__content {
+    margin-bottom: 25px;
+  }
+
+  .title__heads {
     padding-left: 20px;
-    margin-bottom: 8px;
-    z-index: 10;
+    margin-bottom: 20px;
 
     position: relative;
-     &::before {
+      &::before {
       content: "";
 
       position: absolute;
-      z-index: 11;
       top: 0;
       left: 0;
 
@@ -20,34 +122,86 @@
     }
   }
 
-  &__head {
+  .title__head {
     @include nospace;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-size: 24px;
     font-style: normal;
-    font-weight: 10;
+    font-weight: 100;
     text-transform: uppercase;
   }
 
-  &__subhead {
+  .title__subhead {
     @include nospace;
     font-size: 14px;
     font-style: normal;
-    font-weight: 10;
+    font-weight: 100;
     text-transform: uppercase;
   }
 
-  &__notation {
+  .title__notation {
     @include nospace;
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
-    z-index: 10;
+    font-weight: bold;
+
+    &_point {
+      padding: 0 6px;
+    }
+  }
+}
+
+@media (min-width: $l-min) {
+  .title {
+    padding: 35px;
   }
 
-  &__notation-1,
-  &__notation-2,
-  &__notation-point {
-    z-index: 10;
+  .title__content {
+    margin-bottom: 30px;
+  }
+
+  .title__heads {
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+    position: relative;
+      &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 8px;
+      height: 100%;
+    }
+  }
+
+  .title__head {
+    @include nospace;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  .title__subhead {
+    @include nospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  .title__notation {
+    @include nospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+
+    &_point {
+      padding: 0 8px;
+    }
   }
 }

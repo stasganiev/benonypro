@@ -1,0 +1,51 @@
+.social__img {
+  fill: $color-social-unactive;
+}
+
+.social__img-github {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-github;
+  }
+}
+
+.social__img-instagram {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-instagram;
+  }
+}
+
+.social__img-telegram {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-telegram;
+  }
+}
+
+.social__img-skype {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-skype;
+  }
+}
+
+.social__img-facebook {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-facebook;
+  }
+}
+
+.social__img-youtube {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-youtube;
+  }
+}

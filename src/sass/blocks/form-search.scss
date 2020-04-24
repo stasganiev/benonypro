@@ -1,15 +1,13 @@
 .form-search {
   display: flex;
   flex-direction: row;
-  margin: 10px 0;
-  margin-right: 70px;
 
   &__search-box {
     position: relative;
     margin-right: 12px;
   }
 
-  &__input{
+  &__input {
     padding-right: 35px;
 
     &:focus + .form-search__btn-search svg,
@@ -33,5 +31,53 @@
 
   &__toggle {
     margin: auto;
+  }
+}
+
+@media (max-width: $s-max) {
+  .form-search {
+    margin: 8px 0;
+    margin-right: 50px;
+
+    &__search-box {
+      margin-right: 8px;
+    }
+  }
+
+  .navbar__js_opened .form-search {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .form-search {
+    margin: 10px 0;
+    margin-right: 60px;
+
+    &__search-box {
+      margin-right: 10px;
+    }
+
+    &__input {
+      min-width: 240px;
+    }
+  }
+
+  .navbar__js_opened .form-search {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: $l-min) {
+  .form-search {
+    margin: 15px 0;
+
+    &__search-box {
+      margin-right: 15px;
+    }
+
+    &__input {
+      min-width: 270px;
+    }
   }
 }

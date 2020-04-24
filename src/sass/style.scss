@@ -6,19 +6,22 @@
 @import "base/base.scss";
 @import "layouts/layouts.scss";
 // Блоки
-@import "typicks/buttons.scss"; //-цвета
+@import "blocks/block-site.scss";
+@import "typicks/buttons.scss";
+@import "blocks/main-menu.scss";
 @import "typicks/copyright.scss";
 @import "blocks/navbar.scss";
 @import "blocks/logo.scss";
 @import "blocks/header.scss";
 @import "blocks/title.scss";
 @import "blocks/puzzle.scss";
+@import "blocks/social.scss";
 // Формы
 @import "blocks/form.scss";
-@import "blocks/form-search.scss"; //-цвета
+@import "blocks/form-search.scss";
 @import "blocks/input.scss";
 // Типографика и цвета
 @import "colors/theme.scss";
-@import "test/toggle.scss"; //-цвета
+@import "test/toggle.scss";
 // Служебные
 // @import "layouts/outlines.scss";

@@ -1,21 +1,53 @@
-.logo__link {
-  margin-top: 10px;
+.logo {
+  background-color: $base-color1;
 }
 
-@media (max-width: $s-max) {
+@media (max-width: $xs-max) {
+  .logo__link {
+    margin: 8px;
+  }
+
   .logo__img {
-    @include size(34px, 50px);
+    @include size(20px, 30px);
+  }
+}
+
+@media (min-width: $s-min) and (max-width: $s-max) {
+  .logo__link {
+    margin: 8px;
+  }
+
+  .logo__img {
+    @include size(23px, 34px);
   }
 }
 
 @media (min-width: $m-min) and (max-width: $m-max) {
+  .logo__link {
+    margin: 10px;
+  }
+
   .logo__img {
     @include size(80px, 29px);
   }
 }
 
-@media (min-width: $l-min) {
+@media (min-width: $l-min) and (max-width: $l-max) {
+  .logo__link {
+    margin: 15px;
+  }
+
   .logo__img {
     @include size(100px, 36px);
+  }
+}
+
+@media (min-width: $xl-min) {
+  .logo__link {
+    margin: 15px;
+  }
+
+  .logo__img {
+    @include size(110px, 40px);
   }
 }

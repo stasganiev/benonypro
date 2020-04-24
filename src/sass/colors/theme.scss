@@ -1,10 +1,29 @@
+// Глобальные и хедер
+
 body {
-  @include colors($txt-clr, $bg-clr);
+  @include colors($text-color, $bg-color);
 }
 
 .header {
-  @include colors($base-clr-light, #ffffff);
+  @include colors($text-color-invert, #ffffff);
 }
+
+.main-menu__item {
+  border-top-color: $main-menu-brd-color;
+  border-bottom-color: $main-menu-brd-shadow;
+}
+
+@media (min-width: $s-min) {
+  .puzzle {
+    background-color: rgba(87, 117, 144, 0.87);
+  }
+
+  .puzzle__menu-item {
+    background-color: rgba(87, 117, 144, 0.3);
+  }
+}
+
+// Прочие элементы
 
 .title {
   &__heads::before {
@@ -15,6 +34,8 @@ body {
     color: $base-clr-light-darken;
   }
 }
+
+// Формы
 
 .form {
   &_contact {
@@ -32,7 +53,7 @@ body {
   border-color: $input-clr-brd;
 
   &_search {
-    color: $bg-clr;
+    color: $bg-color;
     background-color: transparent;
 
     &::placeholder {

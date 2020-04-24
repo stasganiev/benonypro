@@ -2,6 +2,29 @@
 $base-color1: #577590;
 $base-color2: #F3CA40;
 
+// Типографика
+$text-color: #141418;
+$bg-color: #fdfdfd;
+$text-color-invert: $bg-color;
+$bg-color-invert: $text-color;
+
+// Навигация
+$main-menu-bg-color: darken($base-color1, 5%);
+$main-menu-brd-color: darken($base-color1, 15%);
+$main-menu-brd-shadow: lighten($base-color1, 15%);
+
+// Социконки
+$color-social-unactive: #c0c0c0;
+$color-social-github: #3E75C3;
+$color-social-instagram: #5189AF;
+$color-social-telegram: #4aaee8;
+$color-social-skype: #3BAEDA;
+$color-social-facebook: #3F65A6;
+$color-social-youtube: #C12025;
+
+
+
+
 $basecolor-sketch-blue: #577590;
 $basecolor-sketch-yellow: #F3CA40;
 
@@ -17,11 +40,6 @@ $base-clr-accent-lighten: lighten($base-clr-accent, 10%);
 $base-clr-accent-darken: darken($base-clr-accent, 10%);
 $base-clr-other-lighten: lighten($base-clr-other, 10%);
 $base-clr-other-darken: darken($base-clr-other, 10%);
-
-// типографика
-$bg-clr: #fdfdfd;
-$bg-clr-dark: #032539e6;
-$txt-clr: #141418;
 
 // кнопки
 $btn-clr: $base-clr-light;
@@ -44,11 +62,3 @@ $color-navbar-bk: rgba(15, 42, 98, 0.85);
 $color-menu-border: rgb(6, 23, 58);
 $color-menu-shadow: rgba(200, 200, 200, 0.15);
 
-// социконки
-$color-social-unactive: #c0c0c0;
-$color-social-github: #3E75C3;
-$color-social-instagram: #5189AF;
-$color-social-telegram: #4aaee8;
-$color-social-skype: #3BAEDA;
-$color-social-facebook: #3F65A6;
-$color-social-youtube: #C12025;

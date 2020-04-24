@@ -1,4 +1,6 @@
 .header {
+  margin-bottom: 160px;
+  background-color: rgb(87, 117, 144);
   background-image: url("../../img/bg-myself-big-1900.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -7,38 +9,83 @@
   &__nav {
     margin-top: 0;
     margin-bottom: 60px;
-    padding: 10px;
-    // border-bottom-left-radius: 12px;
-    // border-bottom-right-radius: 12px;
     background-color: rgba(87, 117, 144, 0.87);
-    // background-color: rgb(87, 117, 144);
   }
 
   &__face-cover {
     position: relative;
-    margin-bottom: 100px;
+    min-height: 300px;
   }
 
-  &__brand-title {
+  &__puzzle {
+    margin-bottom: -140px;
+  }
+}
+
+.header__brand-title {
+  position: absolute;
+}
+
+@media (max-width: $xs-max) {
+  .header__social {
+    display: none;
+  }
+
+  .header__brand-title {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: $s-min) and (max-width: $s-max) {
+  .header__social {
     position: absolute;
     top: 0;
-    left: 100px;
-    padding: 20px;
-    backdrop-filter: blur(7px) contrast(60%);
-    // backdrop-filter: blur(8px) saturate(120%) contrast(200%);
+    right: 0;
+  }
 
-    // background-image: url("../../img/bg-square1.svg"), url("../../img/bg-square2.svg");
-    // background-repeat: no-repeat, no-repeat;
-    // background-position: 0 0, 15px 15px;
-    // background-size: 160px 200px, 160px 200px;
-    }
+  .header__brand-title {
+    top: 0;
+    left: 0;
+  }
+}
 
-  &__puzzle {
-    margin-bottom: -50px;
-    padding: 10px;
-    // border-top-left-radius: 12px;
-    // border-top-right-radius: 12px;
-    background-color: rgba(87, 117, 144, 0.87);
-    // background-color: rgb(87, 117, 144);
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .header__social {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .header__brand-title {
+    top: 0;
+    left: 50px;
+  }
+}
+
+@media (min-width: $l-min) and (max-width: $l-max) {
+  .header__social {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .header__brand-title {
+    top: 0;
+    left: 70px;
+  }
+}
+
+@media (min-width: $xl-min) {
+  .header__social {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .header__brand-title {
+    top: 0;
+    left: 130px;
   }
 }

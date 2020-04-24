@@ -1,0 +1,91 @@
+// Общее для мобил и таблеток
+@media (max-width: $m-max) {
+  .main-menu {
+    z-index: 50;
+    background-color: $main-menu-bg-color;
+  }
+
+  .main-menu__item:not(:last-child) {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+
+  .main-menu__item:not(:first-child) {
+    border-top-width: 1px;
+    border-top-style: solid;
+  }
+
+  .main-menu__link {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+// Частности по брикпойнтам
+@media (max-width: $xs-max) {
+  .main-menu {
+    width: 100%;
+  }
+
+  .main-menu__link {
+    text-transform: uppercase;
+    padding: 25px 0;
+  }
+}
+
+@media (min-width: $s-min) and (max-width: $s-max) {
+  .main-menu__item {
+    &_prog1s,
+    &_learn {
+      display: none;
+    }
+  }
+
+  .main-menu__link {
+    padding: 20px 70px;
+  }
+}
+
+@media (min-width: $m-min) and (max-width: $m-max) {
+  .main-menu__item {
+    &_prog1s,
+    &_learn,
+    &_sites {
+      display: none;
+    }
+  }
+
+  .main-menu__link {
+    padding: 20px 100px;
+  }
+}
+
+@media (min-width: $l-min) {
+  .main-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .main-menu__item {
+    margin: 15px 10px;
+
+    &:last-child {
+      margin-left: auto;
+    }
+
+    &_prog1s,
+    &_learn,
+    &_sites {
+      display: none;
+    }
+  }
+
+  .main-menu__link {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+}

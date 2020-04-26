@@ -6,15 +6,6 @@ body {
   @include colors($text-color, $bg-color-outline);
 }
 
-.block-site {
-  @media (min-width: $viewport-out) {
-    box-shadow: 0 0 20px 2px rgba($shadow-outline, 0.9),
-                0 0 20px 4px rgba($shadow-outline, 0.7),
-                0 0 20px 6px rgba($shadow-outline, 0.5),
-                0 0 20px 10px rgba($shadow-outline, 0.4);
-  }
-}
-
 .header,
 .logo {
   @include colors($text-color-invert, $base-color1);
@@ -69,7 +60,6 @@ body {
 
 .title {
   background-color: $attantion-panel-bg-color;
-  // backdrop-filter: blur(8px) saturate(120%) contrast(200%);
 
   &__heads::before {
     background-color: $base-color2;
@@ -77,6 +67,11 @@ body {
 
   &__notation {
     color: $text-color-invert-mix;
+  }
+
+  &_block-light {
+    background-color: transparent;
+    color: $text-color;
   }
 }
 

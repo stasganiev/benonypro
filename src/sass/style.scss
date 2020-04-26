@@ -5,7 +5,7 @@
 @import "base/mixins.scss";
 @import "base/base.scss";
 @import "layouts/layouts.scss";
-// Блоки
+// Блоки: обложка
 @import "blocks/block-site.scss";
 @import "typicks/buttons.scss";
 @import "blocks/main-menu.scss";
@@ -16,6 +16,8 @@
 @import "blocks/title.scss";
 @import "blocks/puzzle.scss";
 @import "blocks/social.scss";
+//Блоки: главная
+@import "blocks/slider.scss";
 // Формы
 @import "blocks/form.scss";
 @import "blocks/form-search.scss";

@@ -51,27 +51,3 @@ $btn-clr-bg-light: lighten($btn-clr-bg, 20%);
 
 $btn-clr-dark: darken($btn-clr, 20%);
 $btn-clr-bg-dark: darken($btn-clr-bg, 20%);
-
-
-
-
-$basecolor-sketch-blue: #577590;
-$basecolor-sketch-yellow: #F3CA40;
-
-$base-clr-light: #f8f3e3;
-$base-clr-dark: $basecolor-sketch-blue;
-$base-clr-accent: #b35417;
-$base-clr-other: #b83933;
-
-// производные от базовой палитры
-$base-clr-light-lighten: lighten($base-clr-light, 10%);
-$base-clr-light-darken: darken($base-clr-light, 10%);
-$base-clr-accent-lighten: lighten($base-clr-accent, 10%);
-$base-clr-accent-darken: darken($base-clr-accent, 10%);
-$base-clr-other-lighten: lighten($base-clr-other, 10%);
-$base-clr-other-darken: darken($base-clr-other, 10%);
-
-// меню и навигация
-$color-navbar-bk: rgba(15, 42, 98, 0.85);
-$color-menu-border: rgb(6, 23, 58);
-$color-menu-shadow: rgba(200, 200, 200, 0.15);

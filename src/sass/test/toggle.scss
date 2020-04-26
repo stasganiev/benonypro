@@ -9,7 +9,7 @@
     cursor: pointer;
     width: 60px;
     height: 20px;
-    background: $base-clr-light;
+    background: $base-color2;
     transition: all 0.3s ease;
     &:before {
       // moving square
@@ -78,11 +78,11 @@
     }
     & + label {
       // background
-      background: $base-clr-light-darken !important;
+      background: darken($base-color2, 20%) !important;
       cursor: not-allowed !important;
       &:before {
         // moving square
-        background: $base-clr-light !important;
+        background: $base-color2 !important;
       }
     }
   }
@@ -93,13 +93,13 @@
   label {
     &:before {
       // moving square
-      background: $base-clr-accent-darken;
+      background: darken($base-color2, 20%);
     }
   }
   input:checked + label {
     &:before {
       // moving square
-      background: $base-clr-accent-lighten;
+      background: lighten($base-color2, 20%);
     }
   }
 }

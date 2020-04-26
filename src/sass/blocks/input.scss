@@ -13,6 +13,5 @@
   &:active {
     outline: none;
     border-radius: 0;
-    @include colors($text-color, $bg-color);
   }
 }

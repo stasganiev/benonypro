@@ -1,6 +1,5 @@
 .header {
   margin-bottom: 160px;
-  background-color: rgb(87, 117, 144);
   background-image: url("../../img/bg-myself-big-1900.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -9,16 +8,10 @@
   &__nav {
     margin-top: 0;
     margin-bottom: 60px;
-    background-color: rgba(87, 117, 144, 0.87);
-  }
-
-  &__face-cover {
-    position: relative;
-    min-height: 300px;
   }
 
   &__puzzle {
-    margin-bottom: -140px;
+    margin-bottom: -130px;
   }
 }
 
@@ -27,18 +20,28 @@
 }
 
 @media (max-width: $xs-max) {
+  .header__face-cover {
+    position: relative;
+    min-height: 300px;
+  }
+
   .header__social {
     display: none;
   }
 
   .header__brand-title {
     width: 100%;
-    bottom: 0;
+    bottom: -50px;
     left: 0;
   }
 }
 
 @media (min-width: $s-min) and (max-width: $s-max) {
+  .header__face-cover {
+    position: relative;
+    min-height: 300px;
+  }
+
   .header__social {
     position: absolute;
     top: 0;
@@ -52,6 +55,11 @@
 }
 
 @media (min-width: $m-min) and (max-width: $m-max) {
+  .header__face-cover {
+    position: relative;
+    min-height: 33vw;
+  }
+
   .header__social {
     position: absolute;
     top: 0;
@@ -65,6 +73,11 @@
 }
 
 @media (min-width: $l-min) and (max-width: $l-max) {
+  .header__face-cover {
+    position: relative;
+    min-height: 33vw;
+  }
+
   .header__social {
     position: absolute;
     top: 0;
@@ -78,6 +91,11 @@
 }
 
 @media (min-width: $xl-min) {
+  .header__face-cover {
+    position: relative;
+    min-height: 33vw;
+  }
+
   .header__social {
     position: absolute;
     top: 0;

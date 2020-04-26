@@ -13,18 +13,19 @@
   font-weight: 700;
   line-height: inherit;
 
-  color: inherit;
-  background-color: transparent;
   text-decoration: none;
 
   border: none;
   border-radius: 0;
-  box-shadow: none;
   cursor: pointer;
   transition: 0.2s ease-out;
 
   &_nospace {
     min-width: unset;
+  }
+
+  &_stretch {
+    width: 100%;
   }
 
   // размер
@@ -43,63 +44,18 @@
     font-size: 16px;
   }
 
-  // Оформление (цвет, тень, рамка) и поведение
-  &_normal {
-    @include colors($btn-clr, $btn-clr-bg);
-    border: 1px solid $btn-clr-bg;
-    border-radius: 6px;
-
-    &:hover {
-      color: $btn-clr-bg;
-      border: 1px solid $btn-clr-bg;
-      background-color: transparent;
-    }
-
-    &:focus,
-    &:active {
-      outline: none;
-      box-shadow: 0 0 0 4px rgba(124, 49, 8, 0.11);
-    }
-  }
-
-  &_light {
-    @include colors($base-clr-other-darken, $btn-clr-bg-light);
-    border: 1px solid $btn-clr-bg-light;
-    border-radius: 4px;
-
-    &:hover {
-      color: $btn-clr-bg-light;
-      border: 1px solid $btn-clr-bg-light;
-      background-color: transparent;
-    }
-
-    &:focus,
-    &:active {
-      outline: none;
-      box-shadow: 0 0 0 4px rgba(124, 49, 8, 0.11);
-    }
-  }
-
+  // Оформление и поведение
+  &_normal,
+  &_light,
   &_dark {
-    @include colors($btn-clr-dark, $btn-clr-bg-dark);
-    border: 1px solid $btn-clr-bg-dark;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 4px;
-
-    &:hover {
-      color: $btn-clr-dark;
-      border: 1px solid $btn-clr-dark;
-      background-color: transparent;
-    }
-
-    &:focus,
-    &:active {
-      outline: none;
-      box-shadow: 0 0 0 4px rgba(124, 49, 8, 0.11);
-    }
   }
 
-  &_stretch {
-    width: 100%;
+  &:focus,
+  &:active {
+    outline: none;
   }
 }
 
@@ -131,16 +87,11 @@
     width: 27px;
     height: 4px;
     border-radius: 3px;
-
-    background-color: $btn-clr-bg-light;
-    box-shadow: 0 10px 0 0 $btn-clr-bg-light, 0 20px 0 0 $btn-clr-bg-light;
   }
 
   &:hover::before,
   &:focus::before,
   &:active::before {
-    background-color: $btn-clr-dark;
-    box-shadow: 0 10px 0 0 $btn-clr-dark, 0 20px 0 0 $btn-clr-dark;
     outline: none;
   }
 }
@@ -157,8 +108,6 @@
     width: 25px;
     height: 4px;
     border-radius: 3px;
-
-    background-color: $btn-clr-bg-light;
   }
 
   &::before {
@@ -175,7 +124,6 @@
   &:focus::after,
   &:active::before,
   &:active::after {
-    background-color: $btn-clr-dark;
     outline: none;
   }
 }

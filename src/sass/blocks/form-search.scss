@@ -9,11 +9,6 @@
 
   &__input {
     padding-right: 35px;
-
-    &:focus + .form-search__btn-search svg,
-    &:active + .form-search__btn-search svg {
-      fill: $input-clr-brd-active;
-    }
   }
 
   &__btn-search {
@@ -25,7 +20,6 @@
     & svg {
       width: 20px;
       height: 20px;
-      fill: $base-clr-accent-lighten;
     }
   }
 

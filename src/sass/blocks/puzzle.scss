@@ -4,32 +4,43 @@
   }
 }
 
-@media (min-width: $s-min) and (max-width: $s-max) {
+@media (min-width: $s-min) {
   .puzzle__menu-list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 
-  .puzzle__menu-item {
-    flex-basis: 35%;
-
-    &_sites {
-      display: none;
-    }
-  }
-
   .puzzle__menu-block {
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
+    justify-content: space-between;
+    height: 100%;
+    // min-height: 180px;
+    padding: 10px;
     line-height: 1.5;
+
+    &:hover .puzzle__text_toggle {
+      display: none;
+    }
+
+    &:hover .puzzle__btn {
+      display: block;
+      align-self: flex-start;
+    }
+  }
+
+  .puzzle__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   .puzzle__title {
     @include nospace;
-    margin-top: 18px;
-    margin-bottom: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 100%;
     font-size: 20px;
     text-align: center;
@@ -40,8 +51,24 @@
     margin-bottom: 12px;
     font-size: 16px;
 
-    &:last-child {
-      margin-bottom: 18px;
+    &_toggle {
+      display: block;
+      // min-height: 50px;
+    }
+  }
+
+  .puzzle__btn {
+    display: none;
+  }
+}
+
+@media (min-width: $s-min) and (max-width: $s-max) {
+  .puzzle__menu-item {
+    flex-basis: 35%;
+    padding: 12px 0;
+
+    &_sites {
+      display: none;
     }
   }
 }
@@ -49,55 +76,13 @@
 @media (min-width: $m-min) and (max-width: $m-max) {
   .puzzle__menu-item {
     flex-basis: 30%;
-  }
-
-  .puzzle__menu-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .puzzle__menu-block {
-    line-height: 1.5;
-    padding: 15px;
-  }
-
-  .puzzle__title {
-    margin-bottom: 25px;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .puzzle__text {
-    font-size: 16px;
+    padding: 12px 0;
   }
 }
 
 @media (min-width: $l-min) {
   .puzzle__menu-item {
     flex-basis: 30%;
-  }
-
-  .puzzle__menu-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .puzzle__menu-block {
-    line-height: 1.5;
-    padding: 20px;
-  }
-
-  .puzzle__title {
-    margin-bottom: 25px;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .puzzle__text {
-    font-size: 16px;
+    padding: 12px 0;
   }
 }

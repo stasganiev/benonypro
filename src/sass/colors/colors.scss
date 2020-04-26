@@ -1,26 +1,56 @@
 // Базовые цвета
 $base-color1: #577590;
 $base-color2: #F3CA40;
+$bg-color-outline: lighten($base-color2, 60%); // заливка подложки для очень широких экранов
+$shadow-outline: lighten($base-color2, 30%);
 
 // Типографика
 $text-color: #141418;
 $bg-color: #fdfdfd;
 $text-color-invert: $bg-color;
+$text-color-invert-mix: lighten($base-color2, 31%);
 $bg-color-invert: $text-color;
 
-// Навигация
+// Обложка
+// Главное меню
+$main-menu-color: lighten($base-color2, 36%);
+$main-menu-color-active: #ffffff;
+// Выпадающее меню
 $main-menu-bg-color: darken($base-color1, 5%);
 $main-menu-brd-color: darken($base-color1, 15%);
-$main-menu-brd-shadow: lighten($base-color1, 15%);
+$main-menu-brd-shadow: rgba(lighten($base-color1, 15%), 0.5);
+$header-nav-bg-color: rgba($base-color1, 0.87); // Фон плавающих панелей
 
 // Социконки
-$color-social-unactive: #c0c0c0;
+$color-social-unactive: rgb(90, 90, 90);
 $color-social-github: #3E75C3;
 $color-social-instagram: #5189AF;
 $color-social-telegram: #4aaee8;
 $color-social-skype: #3BAEDA;
 $color-social-facebook: #3F65A6;
 $color-social-youtube: #C12025;
+
+$attantion-panel-bg-color: rgba($color-social-unactive, 0.70);
+
+// формы, элементы формы
+$form-color: $text-color-invert;
+$form-bg-color: darken($base-color1, 18%);
+$form_shadow: darken($base-color1, 30%);
+$input-color: $text-color;
+$input-bg-color: $bg-color;
+$input-border-color: $base-color2;
+$input-border-color-active: darken($base-color2, 20%);
+
+// кнопки
+$btn-clr: $text-color;
+$btn-clr-bg: $base-color2;
+$btn-clr-shdw: darken($base-color2, 40%);
+
+$btn-clr-light: lighten($btn-clr, 20%);
+$btn-clr-bg-light: lighten($btn-clr-bg, 20%);
+
+$btn-clr-dark: darken($btn-clr, 20%);
+$btn-clr-bg-dark: darken($btn-clr-bg, 20%);
 
 
 
@@ -41,24 +71,7 @@ $base-clr-accent-darken: darken($base-clr-accent, 10%);
 $base-clr-other-lighten: lighten($base-clr-other, 10%);
 $base-clr-other-darken: darken($base-clr-other, 10%);
 
-// кнопки
-$btn-clr: $base-clr-light;
-$btn-clr-bg: $base-clr-accent;
-$btn-clr-light: $base-clr-light;
-$btn-clr-bg-light: $base-clr-accent-lighten;
-$btn-clr-dark: $base-clr-light;
-$btn-clr-bg-dark: $base-clr-accent-darken;
-
-// формы, элементы формы
-$form-clr: $base-clr-light-lighten;
-$form-clr-bg: $base-clr-dark;
-$input-clr: $base-clr-dark;
-$input-clr-bg: $base-clr-light;
-$input-clr-brd: $base-clr-accent-lighten;
-$input-clr-brd-active: $base-clr-light;
-
 // меню и навигация
 $color-navbar-bk: rgba(15, 42, 98, 0.85);
 $color-menu-border: rgb(6, 23, 58);
 $color-menu-shadow: rgba(200, 200, 200, 0.15);
-

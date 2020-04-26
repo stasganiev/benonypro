@@ -1,68 +1,283 @@
+//////////////////////////
 // Глобальные и хедер
+//////////////////////////
 
 body {
-  @include colors($text-color, $bg-color);
+  @include colors($text-color, $bg-color-outline);
 }
 
-.header {
-  @include colors($text-color-invert, #ffffff);
+.block-site {
+  @media (min-width: $viewport-out) {
+    box-shadow: 0 0 20px 2px rgba($shadow-outline, 0.9),
+                0 0 20px 4px rgba($shadow-outline, 0.7),
+                0 0 20px 6px rgba($shadow-outline, 0.5),
+                0 0 20px 10px rgba($shadow-outline, 0.4);
+  }
+}
+
+.header,
+.logo {
+  @include colors($text-color-invert, $base-color1);
+}
+
+.header__nav {
+  @include colors($main-menu-color, $header-nav-bg-color);
+}
+
+.main-menu,
+.navbar__js_opened .navbar__btn-area {
+  background-color: $main-menu-bg-color;
 }
 
 .main-menu__item {
-  border-top-color: $main-menu-brd-color;
-  border-bottom-color: $main-menu-brd-shadow;
+  &:not(:last-child) {
+    border-bottom-color: $main-menu-brd-shadow;
+  }
+
+  &:not(:first-child) {
+    border-top-color: $main-menu-brd-color;
+  }
+}
+
+@media (max-width: $m-max) {
+  .main-menu__link {
+    &:hover,
+    &:focus {
+      @include colors($main-menu-color-active, $main-menu-brd-color);
+    }
+
+    &:active {
+      @include colors(darken($main-menu-color-active, 10%), rgba($main-menu-brd-color, 0.45));
+    }
+  }
+}
+
+@media (min-width: $l-min) {
+  .main-menu__link {
+    &:hover,
+    &:focus {
+      @include colors($main-menu-color-active, $main-menu-brd-color);
+      border-bottom-color: $main-menu-color-active;
+    }
+
+    &:active {
+      @include colors(darken($main-menu-color-active, 10%), rgba($main-menu-brd-color, 0.45));
+      border-bottom-color: rgba($main-menu-color-active, 0.45);
+    }
+  }
+}
+
+.title {
+  background-color: $attantion-panel-bg-color;
+  // backdrop-filter: blur(8px) saturate(120%) contrast(200%);
+
+  &__heads::before {
+    background-color: $base-color2;
+  }
+
+  &__notation {
+    color: $text-color-invert-mix;
+  }
 }
 
 @media (min-width: $s-min) {
   .puzzle {
-    background-color: rgba(87, 117, 144, 0.87);
+    @include colors($main-menu-color, $header-nav-bg-color);
   }
 
-  .puzzle__menu-item {
-    background-color: rgba(87, 117, 144, 0.3);
-  }
-}
+  .puzzle__menu-block {
+    background-color: rgba($base-color1, 0.5);
 
-// Прочие элементы
-
-.title {
-  &__heads::before {
-    background-color: $base-clr-other-lighten;
-  }
-
-  &__notation {
-    color: $base-clr-light-darken;
+    &:hover {
+      background-color: $base-color1;
+      box-shadow: 0 0 10px 1px rgba(darken($base-color1, 40%), 0.11),
+                  0 0 10px 2px rgba(darken($base-color1, 40%), 0.09),
+                  0 0 10px 4px rgba(darken($base-color1, 40%), 0.07);
+    }
   }
 }
 
+//////////////////////////
+// Кнопки
+//////////////////////////
+
+.btn {
+  @include colors(inherit, transparent);
+  box-shadow: none;
+
+  &:focus,
+  &:active {
+    box-shadow: 0 0 10px 2px rgba($btn-clr-shdw, 0.13),
+                0 0 10px 4px rgba($btn-clr-shdw, 0.11),
+                0 0 10px 6px rgba($btn-clr-shdw, 0.09);
+  }
+
+  &_normal {
+    @include colors($btn-clr, $btn-clr-bg);
+    border-color: $btn-clr-bg;
+
+    &:hover {
+      @include colors($btn-clr-bg, transparent);
+    }
+  }
+
+  &_light {
+    @include colors($btn-clr-light, $btn-clr-bg-light);
+    border-color: $btn-clr-bg-light;
+
+    &:hover {
+      @include colors($btn-clr-bg-light, transparent);
+    }
+  }
+
+  &_dark {
+    @include colors($btn-clr-dark, $btn-clr-bg-dark);
+    border-color: $btn-clr-bg-dark;
+
+    &:hover {
+      @include colors($btn-clr-dark, transparent);
+    }
+  }
+}
+
+.navbar__js_closed .btn__main-menu {
+  &::before {
+    background-color: $main-menu-color;
+    box-shadow: 0 10px 0 0 $main-menu-color,
+                0 20px 0 0 $main-menu-color;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    background-color: $main-menu-color-active;
+    box-shadow: 0 10px 0 0 $main-menu-color-active,
+                0 20px 0 0 $main-menu-color-active;
+  }
+}
+
+.navbar__js_opened .btn__main-menu {
+  &::before,
+  &::after {
+    background-color: $main-menu-color;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:hover::after,
+  &:focus::after,
+  &:active::before,
+  &:active::after {
+    background-color: $main-menu-color-active;
+  }
+}
+
+//////////////////////////
+// Социконки
+//////////////////////////
+
+.social__img {
+  fill: $color-social-unactive;
+}
+
+.social__img-github {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-github;
+  }
+}
+
+.social__img-instagram {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-instagram;
+  }
+}
+
+.social__img-telegram {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-telegram;
+  }
+}
+
+.social__img-skype {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-skype;
+  }
+}
+
+.social__img-facebook {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-facebook;
+  }
+}
+
+.social__img-youtube {
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $color-social-youtube;
+  }
+}
+
+//////////////////////////
 // Формы
+//////////////////////////
+
+.form-search__input {
+  &:focus + .form-search__btn-search svg,
+  &:active + .form-search__btn-search svg {
+    fill: $main-menu-brd-color;
+  }
+}
+
+.form-search__btn-search {
+  & svg {
+    fill: $main-menu-color;
+  }
+}
 
 .form {
   &_contact {
-    @include colors($form-clr, $form-clr-bg);
-    box-shadow: 0 0 2px rgba(3, 37, 57, 0.05),
-                0 0 4px rgba(3, 37, 57, 0.08),
-                0 0 8px rgba(3, 37, 57, 0.10),
-                0 0 16px rgba(3, 37, 57, 0.12),
-                0 0 32px rgba(3, 37, 57, 0.14);
+    @include colors($form-color, $form-bg-color);
+    box-shadow: 0 0 2px rgba($form_shadow, 0.05),
+                0 0 4px rgba($form_shadow, 0.08),
+                0 0 8px rgba($form_shadow, 0.10),
+                0 0 16px rgba($form_shadow, 0.12),
+                0 0 32px rgba($form_shadow, 0.14);
   }
 }
 
 .input {
-  @include colors($input-clr, $input-clr-bg);
-  border-color: $input-clr-brd;
-
-  &_search {
-    color: $bg-color;
-    background-color: transparent;
-
-    &::placeholder {
-      color: $input-clr-brd;
-    }
-  }
+  @include colors($input-color, $input-bg-color);
+  border-color: $input-border-color;
 
   &:focus,
   &:active {
-    border-color: $input-clr-brd-active;
+    @include colors($input-color, $bg-color);
+    border-color: $input-border-color-active;
+  }
+
+  &_search {
+    @include colors($main-menu-color, transparent);
+    border-color: $main-menu-color;
+
+    &:focus,
+    &:active {
+      @include colors($input-color, $bg-color);
+      border-color: $main-menu-brd-color;
+    }
+
+    &::placeholder {
+      color: rgba($main-menu-color, 0.5);
+    }
   }
 }

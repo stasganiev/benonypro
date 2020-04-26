@@ -62,10 +62,21 @@
 
   .title__content {
     margin-bottom: 23px;
+
+    &_block-light {
+      width: 100%;
+    }
   }
 
   .title__heads {
     margin-bottom: 18px;
+
+    &_block-light {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
   }
 
   .title__head {
@@ -76,6 +87,10 @@
     font-weight: 100;
     text-transform: uppercase;
     text-align: center;
+
+    &_block-light {
+      margin-bottom: 0;
+    }
   }
 
   .title__subhead {
@@ -85,6 +100,10 @@
     font-weight: 100;
     text-transform: uppercase;
     text-align: center;
+
+    &_block-light {
+      margin-top: 10px;
+    }
   }
 
   .title__notation {

@@ -1,0 +1,12 @@
+@media (min-width: $l-min) {
+  .myworks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .myworks__title {
+    min-width: 195px;
+    margin-right: 40px;
+  }
+}

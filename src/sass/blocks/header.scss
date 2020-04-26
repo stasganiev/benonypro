@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 160px;
+  margin-bottom: 175px;
   background-image: url("../../img/bg-myself-big-1900.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -20,6 +20,10 @@
 }
 
 @media (max-width: $xs-max) {
+  .header {
+    margin-bottom: 90px;
+  }
+
   .header__face-cover {
     position: relative;
     min-height: 300px;

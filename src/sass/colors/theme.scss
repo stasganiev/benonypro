@@ -17,7 +17,13 @@ body {
 
 .main-menu,
 .navbar__js_opened .navbar__btn-area {
-  background-color: $main-menu-bg-color;
+  @media (max-width: $m-max) {
+    background-color: $main-menu-bg-color;
+  }
+
+  @media (min-width: $l-min) {
+    background-color: transparent;
+  }
 }
 
 .main-menu__item {

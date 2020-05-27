@@ -20,14 +20,22 @@
     padding: 10px;
     line-height: 1.5;
 
-    &:hover .puzzle__text_toggle {
-      display: none;
+    &:hover {
+      color: $main-menu-color-active;
     }
 
-    &:hover .puzzle__btn {
-      display: block;
-      align-self: flex-start;
+    &:hover .puzzle__title {
+      text-decoration: underline;
     }
+
+    // &:hover .puzzle__text_toggle {
+    //   display: none;
+    // }
+
+    // &:hover .puzzle__btn {
+    //   display: block;
+    //   align-self: flex-start;
+    // }
   }
 
   .puzzle__content {
@@ -57,9 +65,9 @@
     }
   }
 
-  .puzzle__btn {
-    display: none;
-  }
+  // .puzzle__btn {
+  //   display: none;
+  // }
 }
 
 @media (min-width: $s-min) and (max-width: $s-max) {
@@ -67,7 +75,8 @@
     flex-basis: 35%;
     padding: 12px 0;
 
-    &_sites {
+    &_sites,
+    &_onescast {
       display: none;
     }
   }

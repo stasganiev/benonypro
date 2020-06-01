@@ -20,6 +20,8 @@
 
 /* стили для слайдов */
 .slider__item {
+  display: flex;
+  flex-direction: column;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -37,12 +39,12 @@
   align-items: center;
   justify-content: center;
   width: 40px;
-  color: #fff;
+  color: $bg-color;
   text-align: center;
   opacity: 0.5;
   height: 50px;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: $base-color1-75;
 }
 
 .slider__control_show {
@@ -51,7 +53,7 @@
 
 .slider__control:hover,
 .slider__control:focus {
-  color: #fff;
+  color: $bg-color;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -103,17 +105,18 @@
   box-sizing: content-box;
   flex: 0 1 auto;
   width: 30px;
-  height: 4px;
+  height: 6px;
   margin-right: 3px;
   margin-left: 3px;
   text-indent: -999px;
+  border-radius: 4px;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: $base-color2-25;
   background-clip: padding-box;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  // border-top: 10px solid transparent;
+  // border-bottom: 10px solid transparent;
 }
 
 .slider__indicators li.active {
-  background-color: #fff;
+  background-color: $base-color2;
 }

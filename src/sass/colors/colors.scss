@@ -4,8 +4,19 @@ $base-color2: #F3CA40;
 $bg-color-outline: lighten($base-color2, 60%); // заливка подложки для очень широких экранов
 $shadow-outline: lighten($base-color2, 30%);
 
+$base-color1-75: rgba($base-color1, 0.75);
+$base-color2-75: rgba($base-color2, 0.75);
+$base-color1-50: rgba($base-color1, 0.50);
+$base-color2-50: rgba($base-color2, 0.50);
+$base-color1-25: rgba($base-color1, 0.25);
+$base-color2-25: rgba($base-color2, 0.25);
+$base-color1-10: rgba($base-color1, 0.10);
+$base-color2-10: rgba($base-color2, 0.10);
+
 // Типографика
 $text-color: #141418;
+$link-color: #1e1e7a;
+$link-color-active: lighten($link-color, 20%);
 $bg-color: #fdfdfd;
 $text-color-invert: $bg-color;
 $text-color-invert-mix: lighten($base-color2, 31%);

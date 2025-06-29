@@ -10,6 +10,7 @@
 
   <link href="./css/normolize.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
+  <!-- <link href="./css/outlines.css" rel="stylesheet"> -->
   <!-- <link rel="preload" href="fonts/AmaticSC-Regular.woff" as="font" crossorigin="anonymous"> -->
   <link rel="shortcut icon" type="image/x-icon" href="./img/logo16.png">
 </head>
@@ -22,35 +23,47 @@
         <h1 class="visually-hidden">Stas ganiev portfolio</h1>
 
         <nav class="header-nav navbar">
-        <div class="navbar-item navbar-logo logo">
-            <img src="./img/logo-head-desktop-x1.png" alt="Logo" class="logo-img">
-        </div>
-        <div class="navbar-item navbar-mainmenu mainmenu">
-            <div class="mainmenu-item">About me</div>
-            <div class="mainmenu-item">Projects</div>
-            <div class="mainmenu-item">Contact</div>
-        </div>
+            <div class="navbar-item navbar-logo logo">
+                <img src="./img/logo-head-desktop-x1.png" alt="Logo" class="logo-img">
+            </div>
+            <div class="navbar-item navbar-mainmenu mainmenu">
+                <div class="mainmenu-item">
+                    <a href="#" class="mainmenu-item-link">
+                        <p class="mainmenu-item-text">About me</p>
+                    </a>
+                </div>
+                <div class="mainmenu-item">
+                    <a href="#" class="mainmenu-item-link">
+                        <p class="mainmenu-item-text">Projects</p>
+                    </a>
+                </div>
+                <div class="mainmenu-item">
+                    <a href="#" class="mainmenu-item-link">
+                        <p class="mainmenu-item-text">Contact</p>
+                    </a>
+                </div>
+            </div>
         </nav>
 
         <div class="header-maincover maincover">
-            <div class="maincover-sidebar">
-                <div class="maincover-sidebar-item tiile title-title">
+            <div class="maincover-sidebar cover-tiiles">
+                <div class="cover-tiiles-item title-title">
                     <h2 class="title-title-text">Hi, I'm a junior web developer</h2>
                 </div>
-                <div class="maincover-sidebar-item tiile title-description">
+                <div class="cover-tiiles-item title-description">
                     <p class="title-description-text">
                         I'm learning to build clean, responsive websites from scratch. This is one of my first projects — part of my journey into web development
                     </p>
                 </div>
-                <div class="maincover-sidebar-item tiile title-button">
+                <div class="cover-tiiles-item title-button">
                     <button class="title-button-btn" type="button" alt="View projects">
                         View projects
                         <!-- <img src="img/enter.png"> -->
                     </button>
                 </div>
             </div>
-            <div class="maincover-sidebar">
-                <img src="./img/temp.jpg" alt="Current status image" class="maincover-sidebar-img" width="500px" height="270px">
+            <div class="maincover-sidebar cover-img-wrap">
+                <img src="./img/temp.jpg" alt="Current status image" class="cover-img-item" width="500px" height="270px">
             </div>
         </div>
 

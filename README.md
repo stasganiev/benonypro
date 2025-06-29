@@ -1,2 +1,2 @@
-# Benony.pro
-Мой персональный сайт-портфолио
+# Ganiev.pro
+My portfolio

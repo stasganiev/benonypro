@@ -13,6 +13,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100%;
 
   min-width: 320px;
@@ -46,6 +47,19 @@ a {
   color: inherit;
 }
 
+button {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
 /* Basic */
 
 .list-default {
@@ -67,11 +81,30 @@ a {
     clip-path: inset(100%);
 }
 
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+    min-width: 140px;
+
+    font: inherit;
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: unset;
+    text-align: center;
+    vertical-align: middle;
+
+    border: none;
+    border-radius: 7px;
+}
+
 /* Main layout */
 
 .lending-block {
     width: 100%;
     padding: 4% 15%;
+    max-width: 1440px;
 }
 
 .lending-content {
@@ -80,6 +113,10 @@ a {
 }
 
 /* Navbar */
+
+.header {
+    padding-top: 0;
+}
 
 .navbar{
     display: flex;
@@ -117,32 +154,132 @@ a {
 /* Main cover */
 
 .maincover {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 30px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10px;
+    gap: 25px;
 }
 
 .maincover-sidebar {
     flex: 1;
+
+    align-content: center;
 }
 
 .cover-tiiles {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.cover-img-wrap {
-    justify-content: center;
-    align-items: center;
+.cover-tiiles-item {
+    margin-bottom: 10px;
 }
 
-.cover-img-item {
+.cover-img {
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-image: url("../img/temp.jpg");
+    background-position: center center;
+}
+
+/* Main content */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content-title {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.jobs-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.jobs-item{
+    flex: 1;
+}
+
+.jobs-item-img {
+    border: 2px solid #3882f6;
+    border-radius: 10px;
+}
+
+.jobs-item-text {
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Quotes */
+
+.quotes-content {
+    margin: 50px 0;
+}
+
+.quote-text {
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.quote-sign {
+    font-weight: bold;
+    text-align: right;
+}
+
+/*************************/
+/* Colors and typography */
+/*************************/
+
+.header {
+    color: #e5e7eb;
+    background-color: #1f2937;
+}
+
+.cover-img {
+    background-color: #e5e7eb;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 51px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.btn {
+    color: #f9faf8;
+    background-color: #3882f6;
+}
+
+.title-description {
+    color: #e5e7eb;
+}
+
+.main {
+    color: #1f2937;
+    background-color: #f9faf8;
+}
+
+.quotes {
+    color: #1f2937;
+    background-color: #e5e7eb;
 }
